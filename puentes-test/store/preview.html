@@ -1,0 +1,96 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Preview collage - Mi jardín</title><style>
+@page { size: letter; margin: 0.5in; }
+* { box-sizing: border-box; }
+:root { --accent: #2f8f7b; --tint: #eaf5f2; --ink: #222; --muted: #666; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Avenir Next", "Trebuchet MS", Arial, sans-serif; color: var(--ink);
+       font-size: 14pt; line-height: 1.35;
+       -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { position: relative; width: 7.5in; height: 10in; overflow: hidden;
+        display: flex; flex-direction: column; gap: 0.15in;
+        break-after: page; page-break-after: always; }
+.page:last-child { break-after: auto; page-break-after: auto; }
+@media screen {
+  body { background: #ddd; padding: 0.3in 0; }
+  .page { background: #fff; margin: 0 auto 0.3in; padding: 0.5in; width: 8.5in; height: 11in;
+          box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+}
+.draft { position: absolute; top: 0; right: 0; border: 2px solid var(--accent); color: var(--accent);
+         font-weight: 700; font-size: 10pt; letter-spacing: 1px; padding: 2px 8px; border-radius: 4px;
+         background: #fff; }
+.footer { margin-top: auto; font-size: 9pt; color: var(--muted); display: flex; justify-content: space-between;
+          border-top: 1px solid #ddd; padding-top: 0.06in; flex: none; align-self: stretch; }
+h1, h2, h3, p { margin: 0; }
+h2 { font-size: 22pt; color: var(--accent); }
+.page h2 { padding-right: 1.6in; }
+.bi { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; column-gap: 0.25in; }
+.bi > div + div { border-left: 2px solid var(--tint); padding-left: 0.2in; }
+.sub { font-size: 11pt; color: var(--muted); }
+.box { border: 2px solid var(--accent); border-radius: 10px; padding: 0.1in 0.15in; flex: none; }
+.box .label { font-size: 10pt; font-weight: 700; color: var(--accent); text-transform: uppercase;
+              letter-spacing: 1px; margin-bottom: 2px; }
+.tint { background: var(--tint); }
+
+/* cover */
+.cover { align-items: center; justify-content: center; text-align: center; gap: 0.25in; }
+.cover .brand { font-size: 16pt; color: var(--accent); letter-spacing: 1px; }
+.cover h1 { font-size: 46pt; line-height: 1.1; }
+.cover h1.en { font-size: 34pt; color: var(--muted); font-weight: 400; }
+.cover svg { width: 3.2in; height: 3.2in; }
+.cover .age { font-size: 20pt; border: 2px solid var(--accent); border-radius: 30px; padding: 0.06in 0.3in; }
+
+/* instructions + plan */
+ol.rules { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.12in; }
+ol.rules li { font-size: 13pt; }
+table { width: 100%; border-collapse: collapse; font-size: 12pt; }
+th { background: var(--tint); color: var(--accent); text-align: left; padding: 0.06in 0.1in; font-size: 10pt;
+     text-transform: uppercase; letter-spacing: 1px; }
+td { padding: 0.08in 0.1in; border-bottom: 1px solid #ddd; vertical-align: top; }
+td .en, .small .en { color: var(--muted); }
+ul.list { margin: 0; padding-left: 0.2in; font-size: 11pt; }
+.two { display: grid; grid-template-columns: 1fr 1fr; column-gap: 0.25in; }
+
+/* activity */
+.act-head .skill { display: inline-block; background: var(--accent); color: #fff; border-radius: 20px;
+                   padding: 2px 14px; font-size: 11pt; margin-right: 8px; }
+.act-head h2 { font-size: 26pt; line-height: 1.15; }
+.act-head h2 .en { color: var(--muted); font-size: 20pt; font-weight: 400; }
+.steps { display: flex; flex-direction: column; gap: 0.08in; font-size: 15pt; }
+.step { display: grid; grid-template-columns: 0.35in 1fr; align-items: start; }
+.step .n { background: var(--accent); color: #fff; border-radius: 50%; width: 0.28in; height: 0.28in;
+           font-size: 11pt; text-align: center; line-height: 0.28in; margin-top: 3px; }
+.step .en { color: var(--muted); }
+.say { font-size: 17pt; font-weight: 600; }
+.say .en { color: var(--muted); font-weight: 400; }
+.mat { font-size: 12pt; }
+.draw { flex: 1 1 0; min-height: 0; border: 2px dashed var(--accent); border-radius: 12px; padding: 0.08in 0.15in;
+        font-size: 10pt; color: var(--accent); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+
+/* cards */
+.cards { flex: 1; display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; gap: 0.12in; min-height: 0; }
+.card { border: 1.5px solid #888; border-radius: 6px; display: grid; grid-template-columns: 1fr 1fr; }
+.card div { display: flex; align-items: center; justify-content: center; text-align: center;
+            font-size: 22pt; font-weight: 600; padding: 0.05in; }
+.card div + div { border-left: 2px dotted var(--accent); color: var(--muted); font-weight: 400; }
+
+body { background: #888; padding: 20px; }
+.note { color: #fff; font: 14px Arial; text-align: center; margin-bottom: 12px; }
+#collage { width: 2000px; height: 1500px; margin: 0 auto; background: var(--tint); padding: 40px;
+           display: flex; gap: 40px; }
+.panel { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 28px; }
+.panel .brand { font-size: 30pt; letter-spacing: 2px; color: var(--accent); }
+.panel h1 { font-size: 82pt; line-height: 1.05; margin: 0; }
+.panel h1.en { font-size: 54pt; color: var(--muted); font-weight: 400; }
+.panel .lead { font-size: 26pt; }
+.panel ul { font-size: 25pt; margin: 0; padding-left: 36px; display: flex; flex-direction: column; gap: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 12px; }
+.chip { background: #fff; border: 2px solid var(--accent); color: var(--accent); border-radius: 30px;
+         padding: 6px 20px; font-size: 20pt; }
+.fmt { font-size: 22pt; font-weight: 700; color: var(--accent); }
+.grid { display: grid; grid-template-columns: 533px 533px; grid-template-rows: 690px 690px; gap: 40px; }
+.tile { width: 533px; height: 690px; overflow: hidden; border-radius: 6px; box-shadow: 0 3px 12px rgba(0,0,0,.3);
+        background: #fff; }
+.scale { width: 816px; height: 1056px; transform: scale(0.65319); transform-origin: top left; }
+.scale .page { margin: 0; box-shadow: none; }
+@media print { body { background: #fff; padding: 0; } .note { display: none; } }
+</style></head><body><p class="note">Screenshot the framed area (2000 x 1500). Zoom the browser out until it all fits.</p><div id="collage"><div class="panel"><div class="brand">PEQUEÑOS PUENTES BILINGÜES</div><h1>Mi jardín</h1><h1 class="en">My Garden</h1><div class="lead">Actividades bilingües para imprimir<br>Bilingual printable activities</div><ul><li>2 semanas / 2 weeks</li><li>10 actividades / 10 activities</li><li>20 tarjetas de vocabulario / 20 vocabulary cards</li><li>Edad 3 / Age 3</li></ul><div class="chips"><span class="chip">matemáticas / math</span><span class="chip">lenguaje / language</span><span class="chip">arte / art</span><span class="chip">sensorial / sensory</span><span class="chip">motricidad / motor</span></div><div class="fmt">PDF · tamaño carta / letter size · descarga instantánea / instant download</div></div><div class="grid"><div class="tile"><div class="scale"><section class="page cover"><div class="brand">PEQUEÑOS PUENTES BILINGÜES</div><h1 class="es">Mi jardín</h1><h1 class="en">My Garden</h1><svg viewBox="0 0 200 200" fill="none" stroke="#2f8f7b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="flower"><circle cx="100.0" cy="40.0" r="19"/><circle cx="128.5" cy="60.7" r="19"/><circle cx="117.6" cy="94.3" r="19"/><circle cx="82.4" cy="94.3" r="19"/><circle cx="71.5" cy="60.7" r="19"/><circle cx="100" cy="70" r="13"/><path d="M100 112 C98 140 104 160 100 186"/><path d="M100 150 C80 140 66 142 58 130 C76 126 92 134 100 150"/><path d="M101 164 C120 154 134 156 142 144 C124 140 108 148 101 164"/><path d="M30 186 H170"/></svg><div class="age">3 años / 3 years</div><div class="footer"><span>Pequeños Puentes Bilingües · Mi jardín / My Garden · Semana / Week 1</span><span>1 / 9</span></div></section></div></div><div class="tile"><div class="scale"><section class="page "><div class="draft">BORRADOR / DRAFT</div><h2>Plan de la semana / Weekly plan</h2><div><div class="label sub">Objetivos / Objectives</div><ul class="list"><li><div class="bi "><div class="es">Contar hasta 5 puntos y decir cuál grupo tiene más.</div><div class="en">Count up to 5 dots and say which group has more.</div></div></li><li><div class="bi "><div class="es">Nombrar bichos y palabras de la lluvia en español y en inglés.</div><div class="en">Name bugs and rain words in Spanish and English.</div></div></li><li><div class="bi "><div class="es">Explorar la lluvia con agua, pintura y movimiento.</div><div class="en">Explore rain with water, paint, and movement.</div></div></li></ul></div><table><tr><th>Día / Day</th><th>Actividad / Activity</th><th>Área / Skill</th></tr><tr><td><div class="bi "><div class="es">Lunes</div><div class="en">Monday</div></div></td><td><div class="bi "><div class="es">Mariquitas y puntos</div><div class="en">Ladybug dots</div></div></td><td><div class="bi "><div class="es">matemáticas</div><div class="en">math</div></div></td></tr><tr><td><div class="bi "><div class="es">Martes</div><div class="en">Tuesday</div></div></td><td><div class="bi "><div class="es">¿Quién soy?</div><div class="en">Who am I?</div></div></td><td><div class="bi "><div class="es">lenguaje</div><div class="en">language</div></div></td></tr><tr><td><div class="bi "><div class="es">Miércoles</div><div class="en">Wednesday</div></div></td><td><div class="bi "><div class="es">Nube con lluvia</div><div class="en">Cloud and rain</div></div></td><td><div class="bi "><div class="es">arte</div><div class="en">art</div></div></td></tr><tr><td><div class="bi "><div class="es">Jueves</div><div class="en">Thursday</div></div></td><td><div class="bi "><div class="es">Charco de agua</div><div class="en">Puddle play</div></div></td><td><div class="bi "><div class="es">sensorial</div><div class="en">sensory</div></div></td></tr><tr><td><div class="bi "><div class="es">Viernes</div><div class="en">Friday</div></div></td><td><div class="bi "><div class="es">Salta el charco</div><div class="en">Jump the puddle</div></div></td><td><div class="bi "><div class="es">motricidad</div><div class="en">motor</div></div></td></tr></table><div><div class="label sub">Materiales de la semana / Materials for the week</div><ul class="list" style="columns:1"><li><div class="bi "><div class="es">papel rojo para recortar 5 círculos</div><div class="en">red paper to cut into 5 circles</div></div></li><li><div class="bi "><div class="es">5 hojas de papel blanco (4 para los bichos y 1 para la nube)</div><div class="en">5 sheets of white paper (4 for the bugs and 1 for the cloud)</div></div></li><li><div class="bi "><div class="es">5 hojas de papel azul</div><div class="en">5 sheets of blue paper</div></div></li><li><div class="bi "><div class="es">1 marcador negro lavable</div><div class="en">1 washable black marker</div></div></li><li><div class="bi "><div class="es">crayones o marcadores (uno gris)</div><div class="en">crayons or markers (one gray)</div></div></li><li><div class="bi "><div class="es">pintura lavable azul</div><div class="en">washable blue paint</div></div></li><li><div class="bi "><div class="es">1 plato de papel</div><div class="en">1 paper plate</div></div></li><li><div class="bi "><div class="es">papel o un mantel para cubrir la mesa</div><div class="en">paper or a tablecloth to cover the table</div></div></li><li><div class="bi "><div class="es">cinta adhesiva</div><div class="en">tape</div></div></li><li><div class="bi "><div class="es">1 recipiente bajo o bandeja</div><div class="en">1 shallow tub or tray</div></div></li><li><div class="bi "><div class="es">1 esponja</div><div class="en">1 sponge</div></div></li><li><div class="bi "><div class="es">2 vasos de plástico</div><div class="en">2 plastic cups</div></div></li><li><div class="bi "><div class="es">1 toalla</div><div class="en">1 towel</div></div></li></ul></div><div class="footer"><span>Pequeños Puentes Bilingües · Mi jardín: bichos y lluvia / My Garden: Bugs and Rain · Semana / Week 2</span><span>3 / 9</span></div></section></div></div><div class="tile"><div class="scale"><section class="page "><div class="draft">BORRADOR / DRAFT</div><div class="act-head"><span class="skill">sensorial / sensory</span><span class="sub">Jueves / Thursday · 3-5 años / 3-5 years</span><h2><span class="es">Charco de agua</span><br><span class="en">Puddle play</span><br></h2></div><div class="small"><div class="label sub">Materiales / Materials</div><ul class="list mat"><li><div class="bi "><div class="es">1 recipiente bajo o bandeja</div><div class="en">1 shallow tub or tray</div></div></li><li><div class="bi "><div class="es">agua (máximo 5 cm o 2 pulgadas)</div><div class="en">water (5 cm or 2 inches at most)</div></div></li><li><div class="bi "><div class="es">1 esponja</div><div class="en">1 sponge</div></div></li><li><div class="bi "><div class="es">2 vasos de plástico</div><div class="en">2 plastic cups</div></div></li><li><div class="bi "><div class="es">1 toalla</div><div class="en">1 towel</div></div></li></ul></div><div class="steps"><div class="step"><div class="n">1</div><div class="bi "><div class="es">Pon la toalla en el piso y el recipiente encima. Echa 5 cm (2 pulgadas) de agua.</div><div class="en">Put the towel on the floor and the tub on top. Add 5 cm (2 inches) of water.</div></div></div><div class="step"><div class="n">2</div><div class="bi "><div class="es">Mojen la esponja y exprímanla sobre el recipiente: ¡llueve!</div><div class="en">Soak the sponge and squeeze it over the tub: it&#x27;s raining!</div></div></div><div class="step"><div class="n">3</div><div class="bi "><div class="es">Llenen un vaso y viertan el agua en el otro.</div><div class="en">Fill one cup and pour the water into the other.</div></div></div><div class="step"><div class="n">4</div><div class="bi "><div class="es">Hablen de lo que sienten: mojado, fresco, resbaloso. Seca el piso al terminar.</div><div class="en">Talk about how it feels: wet, cool, slippery. Dry the floor when done.</div></div></div></div><div class="box tint"><div class="label">Di esto / Say this</div><div class="bi say"><div class="es">¡Una gota, dos gotas, un charco!</div><div class="en">One drop, two drops, a puddle!</div></div></div><div class="box"><div class="label">Supervisión / Supervision</div><div class="bi "><div class="es">Adulto presente todo el tiempo, siempre junto al agua.</div><div class="en">Adult with the child the whole time, right next to the water.</div></div></div><div class="draw">Dibuja aquí / Draw here</div><div class="footer"><span>Pequeños Puentes Bilingües · Mi jardín: bichos y lluvia / My Garden: Bugs and Rain · Semana / Week 2</span><span>7 / 9</span></div></section></div></div><div class="tile"><div class="scale"><section class="page "><div class="draft">BORRADOR / DRAFT</div><h2>Tarjetas de vocabulario / Vocabulary cards</h2><div class="sub">Recorta cada tarjeta y dóblala por la línea punteada. / Cut out each card and fold on the dotted line.</div><div class="cards"><div class="card"><div>mariquita</div><div>ladybug</div></div><div class="card"><div>abeja</div><div>bee</div></div><div class="card"><div>mariposa</div><div>butterfly</div></div><div class="card"><div>hormiga</div><div>ant</div></div><div class="card"><div>caracol</div><div>snail</div></div><div class="card"><div>lluvia</div><div>rain</div></div><div class="card"><div>nube</div><div>cloud</div></div><div class="card"><div>gota</div><div>drop</div></div><div class="card"><div>charco</div><div>puddle</div></div><div class="card"><div>paraguas</div><div>umbrella</div></div></div><div class="footer"><span>Pequeños Puentes Bilingües · Mi jardín: bichos y lluvia / My Garden: Bugs and Rain · Semana / Week 2</span><span>9 / 9</span></div></section></div></div></div></div></body></html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+@page{size:letter portrait;margin:.42in .48in}*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:8.3pt;line-height:1.34;color:#16202e}
+h1{font-size:15.5pt;color:#0b5394;margin-bottom:2pt}
+h2{font-size:10.5pt;color:#fff;background:#0b5394;padding:3pt 7pt;margin:11pt 0 5pt;border-radius:3pt}
+h3{font-size:9.4pt;color:#0b5394;margin:8pt 0 3pt;border-bottom:.8pt solid #d8dee9;padding-bottom:1.5pt}
+p{margin-bottom:4pt}ul,ol{margin:0 0 5pt 15pt}li{margin-bottom:2.4pt}
+pre{background:#f4f6fa;border-left:2.5pt solid #0b5394;padding:4pt 6pt;margin:3pt 0;
+    font:7.6pt/1.32 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.93em;background:#eef2f9;padding:0 2.5pt;border-radius:2pt}
+blockquote{border-left:3pt solid #b06a00;background:#fff8e8;padding:5pt 8pt;margin:5pt 0;font-size:8pt}
+table{width:100%;border-collapse:collapse;margin:4pt 0 6pt;font-size:7.9pt}
+th{background:#0b5394;color:#fff;padding:3pt 5pt;text-align:left;font-size:7.5pt}
+td{padding:3pt 5pt;border-bottom:.8pt solid #dfe5ef;vertical-align:top}
+hr{border:none;border-top:1pt solid #d8dee9;margin:9pt 0}
+.foot{margin-top:10pt;border-top:1.5pt solid #0b5394;padding-top:5pt;font-size:8pt;color:#44506a;text-align:center}
+</style><style>
+ul.task-list{list-style:none;margin-left:2pt}
+ul.task-list li label{display:inline}
+ul.task-list li{margin-bottom:3pt}
+.box{display:inline-block;width:7.5pt;height:7.5pt;border:1pt solid #0b5394;border-radius:1.5pt;margin-right:5pt;vertical-align:-0.5pt}
+.box.done{background:#0b5394}
+pre code{background:none;padding:0;border-radius:0;font-size:1em}
+pre{break-inside:avoid}
+</style></head><body>
+<h1 id="after-the-build-the-teachers-weekly-workflow">After the build: the teacher's weekly workflow</h1>
+<p><strong>The idea:</strong> Claude writes the activities and the scripts do everything else. The teacher never runs a script herself; she asks in plain words, and Claude runs them.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>content/{theme}.json</code></td>
+<td>The <strong>activity bank</strong>: every activity written for a theme. Claude adds to it.</td>
+</tr>
+<tr>
+<td><code>generate.py</code></td>
+<td>Picks 5 activities from the bank and makes a week.</td>
+</tr>
+<tr>
+<td><code>build_pack.py</code> → <code>export_pdf.py</code></td>
+<td>Lays out the 9 pages, then saves <code>pack.pdf</code>.</td>
+</tr>
+<tr>
+<td><code>status.py</code> · <code>out/dashboard.html</code></td>
+<td>Tracks each week: draft → needs-review → approved.</td>
+</tr>
+<tr>
+<td><code>store/</code></td>
+<td>Listing, Pinterest pins and a preview image for each product.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-loop-make-review-fix-approve-sell">The loop: make, review, fix, approve, sell</h2>
+<ol type="1">
+<li><strong>Make.</strong> She types: <em>"Make weeks 3 and 4 of Mi jardín for age 3"</em> or <em>"Start a new theme, Los colores / Colors, for age 2."</em> Claude writes the new activities into the bank and runs generate, build and export. Each week takes a few minutes.</li>
+<li><strong>Review.</strong> She opens <code>out/dashboard.html</code> to see what's waiting, prints or reads <code>pack.pdf</code>, and reads <code>review/week-N.md</code>. That's Claude's first pass against the checklist, split into <strong>Must fix / Should fix / Teacher's call</strong>.</li>
+<li><strong>Fix.</strong> She types: <em>"Day 2: use a bigger stone. Change mariquita to catarina everywhere. Rebuild week 1."</em></li>
+<li><strong>Approve.</strong> She types: <em>"Week 1 is approved."</em> Claude runs <code>status.py set … approved</code>, rebuilds the pack without the <strong>BORRADOR / DRAFT</strong> stamp, and the dashboard turns green. (That's PROMPTS step 7.)</li>
+<li><strong>Sell.</strong> She types: <em>"Update the store listing for weeks 1–4."</em> Then she uploads <code>pack.pdf</code> and the preview image to Teachers Pay Teachers or Etsy <strong>herself</strong>, pastes the listing, and sets a price. After that, the marketplace delivers the download to every buyer (her Question 4).</li>
+<li><strong>Promote.</strong> She posts the 3 pins from <code>store/pinterest.md</code>, linking each one to her listing.</li>
+</ol>
+<h2 id="reading-the-dashboard">Reading the dashboard</h2>
+<p>Claude makes every week; the status shows how far each one has gone through <strong>review</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Means</th>
+<th>Who sets it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Borrador / Draft</strong> (grey)</td>
+<td>Made, not reviewed</td>
+<td>Claude, when it builds a week</td>
+</tr>
+<tr>
+<td><strong>Por revisar / Needs review</strong> (yellow)</td>
+<td>Claude's first-pass review is done (<strong>Notas / Notes</strong> link); waiting for the teacher</td>
+<td>Claude, when it reviews</td>
+</tr>
+<tr>
+<td><strong>Aprobado / Approved</strong> (green)</td>
+<td>Fixes made, teacher signed off, DRAFT stamp removed, ready to sell</td>
+<td><strong>Only the teacher</strong>, by telling Claude</td>
+</tr>
+</tbody>
+</table>
+<p>Only <strong>Approved</strong> weeks go in the store.</p>
+<h2 id="reviewing-the-store-before-publishing">Reviewing the store before publishing</h2>
+<ul>
+<li>Open <code>store/listing.md</code> and check every claim against what really exists: weeks, ages, page count. The listing has a <strong>"Do not claim"</strong> list and a <strong>"Before you publish"</strong> checklist. In the test run it called the pack a "2-week pack, not a month pack".</li>
+<li>Open <code>store/preview.html</code> and take a screenshot. That's the product image.</li>
+<li>Nothing goes live until <strong>she</strong> uploads it. Claude drafts and the teacher publishes.</li>
+</ul>
+<h2 id="what-to-show-at-the-close-about-5-minutes">What to show at the close (about 5 minutes)</h2>
+<ol type="1">
+<li><strong>The dashboard:</strong> "Here's her week: two packs, one needs review, one is a draft."</li>
+<li><strong><code>review/week-1.md</code>:</strong> read one <em>Must fix</em> aloud. In the test run it flagged a math question with no right answer, a stone too small for the age, and a soil/allergy note. "The AI caught its own mistakes, and the teacher decides."</li>
+<li><strong>Approve week 1 live</strong> with PROMPTS step 7: the fixes go in, the DRAFT stamp comes off, and the dashboard turns green.</li>
+<li><strong>Type "Make week 3"</strong> and let it run while you take questions. Show the result at the end.</li>
+<li><strong>The listing:</strong> "It refused to call two weeks a month. Nothing is published until she uploads it."</li>
+</ol>
+<p><strong>The line to end on:</strong> <em>"AI drafts, a human approves, and the system packages and delivers."</em></p>
+</body></html>

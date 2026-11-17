@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+@page{size:letter portrait;margin:.42in .48in}*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:8.3pt;line-height:1.34;color:#16202e}
+h1{font-size:15.5pt;color:#0b5394;margin-bottom:2pt}
+h2{font-size:10.5pt;color:#fff;background:#0b5394;padding:3pt 7pt;margin:11pt 0 5pt;border-radius:3pt}
+h3{font-size:9.4pt;color:#0b5394;margin:8pt 0 3pt;border-bottom:.8pt solid #d8dee9;padding-bottom:1.5pt}
+p{margin-bottom:4pt}ul,ol{margin:0 0 5pt 15pt}li{margin-bottom:2.4pt}
+pre{background:#f4f6fa;border-left:2.5pt solid #0b5394;padding:4pt 6pt;margin:3pt 0;
+    font:7.6pt/1.32 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.93em;background:#eef2f9;padding:0 2.5pt;border-radius:2pt}
+blockquote{border-left:3pt solid #b06a00;background:#fff8e8;padding:5pt 8pt;margin:5pt 0;font-size:8pt}
+table{width:100%;border-collapse:collapse;margin:4pt 0 6pt;font-size:7.9pt}
+th{background:#0b5394;color:#fff;padding:3pt 5pt;text-align:left;font-size:7.5pt}
+td{padding:3pt 5pt;border-bottom:.8pt solid #dfe5ef;vertical-align:top}
+hr{border:none;border-top:1pt solid #d8dee9;margin:9pt 0}
+.foot{margin-top:10pt;border-top:1.5pt solid #0b5394;padding-top:5pt;font-size:8pt;color:#44506a;text-align:center}
+</style><style>
+ul.task-list{list-style:none;margin-left:2pt}
+ul.task-list li label{display:inline}
+ul.task-list li{margin-bottom:3pt}
+.box{display:inline-block;width:7.5pt;height:7.5pt;border:1pt solid #0b5394;border-radius:1.5pt;margin-right:5pt;vertical-align:-0.5pt}
+.box.done{background:#0b5394}
+pre code{background:none;padding:0;border-radius:0;font-size:1em}
+pre{break-inside:avoid}
+</style></head><body>
+<h1 id="prompts-for-the-live-build--paste-dont-type">Prompts for the live build — paste, don't type</h1>
+<p>Run in an empty folder: <code>mkdir puentes &amp;&amp; cd puentes &amp;&amp; claude --model sonnet</code><br />
+Theme placeholder: <strong>{THEME}</strong>, e.g. <em>Las manzanas / Apples</em>. Ask the room for one at step 2.<br />
+<em>(Question N)</em> = the teacher's question from her brief; the full list is on the Walkthrough page.<br />
+Paste a prompt, let it finish, show the result (commands are in the <strong>Show guide</strong>), then paste the next one.</p>
+<hr />
+<h2 id="step-1--the-teachers-voice-question-1">Step 1 · The teacher's voice <em>(Question 1)</em></h2>
+<p><strong>What happens:</strong> Claude writes <code>CLAUDE.md</code>, a rules file it rereads before every later step. It holds her voice, her safety rules, the bilingual format and one of her real activities as the model to copy. (~10 s)<br />
+<strong>Why it matters:</strong> this is how AI keeps <em>her</em> style. Fix a rule here once, and every future page follows it.<br />
+<strong>Say:</strong> "Before AI writes anything, we teach it how this teacher writes. That's this file, and she owns it."</p>
+<pre><code>Create a CLAUDE.md for this project. It&#39;s a bilingual (Spanish/English) printable curriculum
+business for children ages 1-5, called &quot;Pequeños Puentes Bilingües&quot; (Little Bilingual Bridges).
+Customers are preschool teachers, childcare centers and families who buy a download and print it.
+
+Rules for everything you create:
+- Write like an experienced, warm preschool teacher: short sentences, practical, encouraging.
+- Activities must be simple and cheap: household or classroom materials only.
+- Age-appropriate: for ages 1-2 nothing smaller than a toilet-paper tube (choking hazard);
+  every activity lists the adult supervision needed.
+- Spanish first, English second, side by side. Natural Latin American Spanish, not a word-for-word translation.
+- Every activity has: name (ES/EN), skill area, age range, materials, steps (3-5), and one
+  &quot;say this&quot; phrase for the adult in both languages.
+- Skill areas: math, language, art, sensory, motor.
+- Letter-size, print-ready, clean layout, lots of white space, big readable text.
+- Never copy published curricula or characters; everything original.
+- Mark everything as DRAFT until the teacher approves it.
+- Always draft right away; don&#39;t ask clarifying questions first. The teacher will redirect.
+
+Here is one of the teacher&#39;s real activities to match the style:
+{PASTE YANIBETH&#39;S 2-3 REAL ACTIVITIES HERE, or use the sample below}</code></pre>
+<p><em>Sample activity if you don't have one of hers:</em></p>
+<pre><code>Contar manzanas / Counting apples (matemáticas / math, 3-4 años)
+Materiales: 5 manzanas de papel, una canasta / 5 paper apples, a basket
+1. Pon las manzanas en la mesa. / Put the apples on the table.
+2. Cuenten juntos mientras las ponen en la canasta. / Count together as you put them in the basket.
+3. Pregunta: &quot;¿Cuántas hay?&quot; / Ask: &quot;How many are there?&quot;
+Di esto / Say this: &quot;¡Una, dos, tres manzanas rojas!&quot; / &quot;One, two, three red apples!&quot;</code></pre>
+<h2 id="step-2--the-generator-question-6">Step 2 · The generator <em>(Question 6)</em></h2>
+<p><strong>What happens:</strong> Claude writes an <strong>activity bank</strong> (<code>content/…json</code>, every activity for the theme) and a small <code>generate.py</code> that picks one activity per day and saves a week as structured data. It also checks the rules: 3–5 steps, a supervision line, no small parts for ages 1–2. (~1 min)<br />
+<strong>Why it matters:</strong> the content lives as data, not as a document, so the same week can become a PDF, a listing or a Spanish-only version.<br />
+<strong>Say:</strong> "Here's her answer: yes, by age, theme, skill and language. The AI writes the activities; the script just assembles and checks them." <strong>Then ask Yanibeth: "Does this sound like you?"</strong></p>
+<pre><code>Build a small generator. Inputs: age (1-5), theme, skill areas (any of math, language, art,
+sensory, motor) and language mode (bilingual by default). Output one week as JSON in
+data/{theme-slug}/age-{age}/week-1.json with: title (ES/EN), 3 learning objectives (ES/EN),
+5 days with one activity per day following CLAUDE.md, a materials list for the week, and a
+vocabulary list of 8-10 words (ES/EN). Then generate one week for: theme &quot;{THEME}&quot;, age 3,
+all five skill areas. Show me the JSON summary when done.</code></pre>
+<h2 id="step-3--the-printable-pack-the-briefs-product">Step 3 · The printable pack <em>(the brief's product)</em></h2>
+<p><strong>What happens:</strong> Claude writes <code>build_pack.py</code>, a template that turns any week's data into 9 letter-size pages: cover, adult guide, weekly plan, 5 activity pages and vocabulary cards. (~1.5 min)<br />
+<strong>Why it matters:</strong> the design is built once. Every future week comes out looking the same, which is what a brand looks like.<br />
+<strong>Say:</strong> "This is the product she sells. Notice it's still stamped DRAFT; nothing is final until she approves it."</p>
+<pre><code>Write build_pack.py that reads data/{theme-slug}/age-{age}/week-{n}.json and writes one print-ready
+file, out/{theme-slug}/age-{age}/week-{n}/index.html. Letter size, @page margins 0.5in, and every
+page exactly one printed page (fixed 10in height, overflow hidden, page break after). Pages:
+cover (title ES/EN, age, &quot;Pequeños Puentes Bilingües&quot;, one simple line-drawn SVG of the theme),
+teacher/family instructions (ES/EN), weekly plan table with objectives, one page per activity
+(big text, ES/EN side by side, Say this and Supervision boxes, a box to draw in that fills the
+rest of the page), and one page of 10 fold-over vocabulary cards (ES/EN). Every page shows DRAFT.
+Simple CSS, light accent color, no other images. Run it for week 1.</code></pre>
+<p><em>Then:</em> <code>open out/*/age-3/week-1/index.html</code> → <strong>⌘P</strong> → check it says <strong>9 pages</strong> → <strong>Save as PDF</strong>.</p>
+<h2 id="step-4--quality-checks-question-5">Step 4 · Quality checks <em>(Question 5)</em></h2>
+<p><strong>What happens:</strong> Claude writes <code>REVIEW-CHECKLIST.md</code> (safety, Spanish, English, originality, image rights, layout), then reviews week 1 against it and writes <code>review/week-1.md</code>. <strong>That review is where the "must-fix" items come from.</strong> It sorts every problem into <em>Must fix</em> (safety or plain wrong), <em>Should fix</em> and <em>Teacher's call</em>, each with the page and a suggested fix. It changes nothing; the week is marked <em>Needs review</em>. (~2 min)<br />
+<strong>Why it matters:</strong> the AI checks its own work against her standards, but the decisions stay with her.<br />
+<strong>Say:</strong> read one <em>Must fix</em> aloud. In the test run: "the math question has no right answer, the cups are 5 and 5." Then ask <strong>Yanibeth</strong> to read a Spanish line aloud and decide one <em>Teacher's call</em> item (e.g. <em>mariquita</em> or <em>catarina</em>).</p>
+<pre><code>Create REVIEW-CHECKLIST.md with checks a teacher signs off on: age-appropriateness and safety
+(choking hazards, supervision), Spanish correctness and natural phrasing, English correctness,
+originality (no copied text, characters or trademarks), images we have the right to sell,
+print layout. Then review data/{theme-slug}/age-3/week-1.json (not the HTML pages) against it and write review/week-1.md listing
+every issue with page and fix. Don&#39;t change anything yet; mark the pack status as NEEDS REVIEW.</code></pre>
+<h2 id="step-5--making-many-question-2">Step 5 · Making many <em>(Question 2)</em></h2>
+<p><strong>What happens:</strong> Claude writes 5 new activities for week 2 and runs the same <code>build_pack.py</code>. It adds a status to every week (draft → needs-review → approved) and a dashboard listing them all. (~3 min)<br />
+<strong>Why it matters:</strong> making more is now cheap. Weeks 3, 4 or a new theme are the same request again, and the dashboard shows what's waiting for her.<br />
+<strong>Say:</strong> "This is how one teacher manages 50 printables: one page shows what's draft, what needs review and what's approved."</p>
+<pre><code>Make week 2 for the same theme and age with five new activities, then run build_pack.py for it.
+Add status.json to each week folder (&quot;status&quot;: &quot;draft&quot; | &quot;needs-review&quot; | &quot;approved&quot; and the date),
+and a dashboard.html that lists every week with its status, so the teacher can review a batch at once.
+Show the BORRADOR / DRAFT badge on the pages only while a week is not approved.</code></pre>
+<h2 id="step-6--selling-and-promotion-questions-3-and-4">Step 6 · Selling and promotion <em>(Questions 3 and 4)</em></h2>
+<p><strong>What happens:</strong> Claude writes the Teachers Pay Teachers and Etsy listings, 3 Pinterest pins and a preview collage for the product image. It's told to claim only what exists. In the test run it wrote "2-week pack, not a month pack" and listed what <em>not</em> to claim. (~2 min)<br />
+<strong>Why it matters:</strong> this answers how she sells without emailing files. She uploads the PDF once, and the marketplace delivers it to every buyer.<br />
+<strong>Say:</strong> "AI writes the listing, but she publishes it. And it won't oversell; it called two weeks two weeks."</p>
+<pre><code>For the {THEME} month pack, write store/listing.md with: a product title for Teachers Pay
+Teachers and one for Etsy (each under 140 characters), a description in English with a Spanish
+summary, what&#39;s included, ages, skills, &quot;printable PDF, letter size, instant download&quot;, and
+10 search tags. Then write store/pinterest.md with 3 pin titles and descriptions. Finally, make
+a 4-image preview set: preview.html laying out the cover and 3 sample pages as a collage I can
+screenshot. Don&#39;t claim anything we haven&#39;t made.</code></pre>
+<h2 id="step-7--approve-a-week-the-teachers-sign-off-optional-live-12-min">Step 7 · Approve a week <em>(the teacher's sign-off; optional live, 1–2 min)</em></h2>
+<p><strong>What happens:</strong> acting on the teacher's "approved", Claude applies the step 4 must-fix items, marks week 1 <em>Approved</em>, rebuilds it <strong>without</strong> the DRAFT stamp and re-exports the PDF. Week 2 stays a draft. (~1 min)<br />
+<strong>Why it matters:</strong> this closes the loop. AI drafts, a human approves, and only approved weeks get sold.<br />
+<strong>Before pasting:</strong> ask Yanibeth to look at week 1 and say "approved".<br />
+<strong>Say:</strong> "Claude never approves on its own. She says 'approved', and only then does the stamp come off."</p>
+<pre><code>The teacher has reviewed week 1. Apply the must-fix items from review/week-1.md, rebuild week 1 and
+re-export its pack.pdf. Then mark week 1 approved with status.py. If the DRAFT badge doesn&#39;t follow the
+status yet, make build_pack.py show it only when a week is not approved. Rebuild, then show me the
+dashboard: week 1 should be Approved with no DRAFT badge, and week 2 still Draft.</code></pre>
+</body></html>

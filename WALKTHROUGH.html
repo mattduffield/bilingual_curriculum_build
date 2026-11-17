@@ -1,0 +1,162 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+@page{size:letter portrait;margin:.42in .48in}*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:8.3pt;line-height:1.34;color:#16202e}
+h1{font-size:15.5pt;color:#0b5394;margin-bottom:2pt}
+h2{font-size:10.5pt;color:#fff;background:#0b5394;padding:3pt 7pt;margin:11pt 0 5pt;border-radius:3pt}
+h3{font-size:9.4pt;color:#0b5394;margin:8pt 0 3pt;border-bottom:.8pt solid #d8dee9;padding-bottom:1.5pt}
+p{margin-bottom:4pt}ul,ol{margin:0 0 5pt 15pt}li{margin-bottom:2.4pt}
+pre{background:#f4f6fa;border-left:2.5pt solid #0b5394;padding:4pt 6pt;margin:3pt 0;
+    font:7.6pt/1.32 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.93em;background:#eef2f9;padding:0 2.5pt;border-radius:2pt}
+blockquote{border-left:3pt solid #b06a00;background:#fff8e8;padding:5pt 8pt;margin:5pt 0;font-size:8pt}
+table{width:100%;border-collapse:collapse;margin:4pt 0 6pt;font-size:7.9pt}
+th{background:#0b5394;color:#fff;padding:3pt 5pt;text-align:left;font-size:7.5pt}
+td{padding:3pt 5pt;border-bottom:.8pt solid #dfe5ef;vertical-align:top}
+hr{border:none;border-top:1pt solid #d8dee9;margin:9pt 0}
+.foot{margin-top:10pt;border-top:1.5pt solid #0b5394;padding-top:5pt;font-size:8pt;color:#44506a;text-align:center}
+</style><style>
+ul.task-list{list-style:none;margin-left:2pt}
+ul.task-list li label{display:inline}
+ul.task-list li{margin-bottom:3pt}
+.box{display:inline-block;width:7.5pt;height:7.5pt;border:1pt solid #0b5394;border-radius:1.5pt;margin-right:5pt;vertical-align:-0.5pt}
+.box.done{background:#0b5394}
+pre code{background:none;padding:0;border-radius:0;font-size:1em}
+pre{break-inside:avoid}
+</style></head><body>
+<h1 id="walkthrough--build-night-monday-november-16-2026">Walkthrough — Build Night, Monday, November 16, 2026</h1>
+<p><em>Build Night: From a Teacher's Idea to an AI-Powered Printable Business</em> · Full Stack Devs PDX · Gladstone Park SDA Church · 7:00–9:00 PM</p>
+<p>Every prompt is in <strong>PROMPTS</strong> (next pages) so nothing has to be typed live. After each step, the <strong>SHOW GUIDE</strong> gives the exact command to open what Claude made and what to point at.</p>
+<h2 id="before-you-leave">Before you leave</h2>
+<ul class="task-list">
+<li><label><span class="box done"></span><strong>Dry run:</strong> done Nov 16 in <code>puentes-test</code> (<em>Mi jardín / My Garden</em>, age 3, all 7 steps). That folder is the <strong>fallback</strong>: week 1 approved, week 2 draft.</label></li>
+<li><label><span class="box done"></span><strong>Yanibeth:</strong> permission to show her name and <em>Pequeños Puentes Bilingües</em> (granted Nov 16). Use her name when you introduce the brief. If she sends a real activity, paste it into step 1; otherwise use the sample in PROMPTS.</label></li>
+<li><label><span class="box"></span><strong>Marketplace rules:</strong> check Teachers Pay Teachers and Etsy rules on AI-assisted content for step 6.</label></li>
+<li><label><span class="box"></span><strong>On site at 6:30:</strong> Claude Code signed in and started with <code>claude --model sonnet</code> (Opus took 7+ min per step in the first dry run) · empty <code>puentes/</code> folder · brief PDF and fallback pack open · terminal font ~20pt · phone hotspot ready.</label></li>
+</ul>
+<h2 id="how-each-step-works">How each step works</h2>
+<ol type="1">
+<li><strong>Paste</strong> the step's prompt from PROMPTS into Claude Code and press Enter. First fill any <code>{...}</code> placeholder: in step 1 paste the sample activity, and in steps 2 and 6 type the theme.</li>
+<li><strong>Wait.</strong> Claude Code asks before it creates files or runs commands. Choose <strong>"Yes, and don't ask again"</strong>, or press <strong>Shift+Tab</strong> once at the start to auto-accept edits. Each step takes about 1–3 minutes, so narrate while it works.</li>
+<li><strong>Show</strong> what it made (the "Show the room" column). For the pack, run <code>open out/*/age-3/week-1/index.html</code>.</li>
+<li><strong>Say</strong> which of the teacher's questions it answers, then go to the next step. If something looks wrong, just tell Claude in plain words, e.g. "make the text bigger on the activity pages".</li>
+</ol>
+<h2 id="the-teachers-six-questions-from-her-brief">The teacher's six questions (from her brief)</h2>
+<table>
+<thead>
+<tr>
+<th>Q</th>
+<th>Her question</th>
+<th>Answered in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>How can AI turn my ideas into complete curricula without losing my style as a teacher?</td>
+<td>Step 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>What process creates, reviews and organizes many printables efficiently?</td>
+<td>Step 5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>How can I automate publishing, promotion and sales?</td>
+<td>Step 6</td>
+</tr>
+<tr>
+<td>4</td>
+<td>What tools let a customer buy and download the file without me sending it?</td>
+<td>Step 6</td>
+</tr>
+<tr>
+<td>5</td>
+<td>How can I make sure the content is original, high quality and age-appropriate?</td>
+<td>Step 4</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Could a system generate drafts by age, theme, skill and language?</td>
+<td>Step 2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-build-735840">The build (7:35–8:40)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Step</th>
+<th>Answers the brief's question</th>
+<th>Paste from PROMPTS</th>
+<th>Show the room</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>The teacher's voice</strong></td>
+<td>"How do I keep my style?"</td>
+<td>CLAUDE.md prompt + one real activity</td>
+<td>The rules file: Spanish first, cheap materials, safety by age, everything marked DRAFT</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>The generator</strong></td>
+<td>"Drafts by age, theme, skill and language?"</td>
+<td>Generator prompt; <strong>ask the room for a theme</strong></td>
+<td>A full week as structured data: objectives, 5 activities, ES/EN vocabulary</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>The printable pack</strong></td>
+<td>The product itself</td>
+<td>Pack prompt → <strong>File → Print → Save as PDF</strong></td>
+<td>Cover, instructions, weekly plan, activity pages, vocabulary cards, letter size</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Quality checks</strong></td>
+<td>"Original, good quality, age-appropriate?"</td>
+<td>Review prompt</td>
+<td>Checklist and issues found; <strong>a Spanish speaker reads the Spanish aloud</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Making many</strong></td>
+<td>"Create and organize many printables efficiently?"</td>
+<td>Week 2 prompt</td>
+<td>A second week built by the same script, plus a draft / needs-review / approved dashboard</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Selling and promotion</strong></td>
+<td>"Automate publishing?" · "Buy and download without me sending it?"</td>
+<td>Store prompt</td>
+<td>Store listings, 3 Pinterest pins, preview images; marketplaces deliver the file automatically</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Approve a week</strong> <em>(optional)</em></td>
+<td>"How do I stay in charge?"</td>
+<td>Approve prompt</td>
+<td>Fixes applied, DRAFT stamp gone, week 1 green on the dashboard</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Test-run times (Nov 16, Sonnet, final prompts):</strong> step 1 · 10 s · step 2 · 1 min · step 3 · 1.5 min · step 4 · 2 min · step 5 · 3 min · step 6 · 2 min. <strong>Total: about 10 min of Claude time</strong>, which leaves most of the hour for talking and showing results. Remember to replace <code>{THEME}</code>: in the test run it was left blank and Claude picked "Mi jardín" on its own.</p>
+<p><strong>Pacing:</strong> start step 1 by 7:35. While Claude works, talk through the "Show the room" column for the previous step. If you're behind at 8:15, skip the live step 5 and show the fallback instead: <code>FALLBACK-PACK-garden-week1-approved.pdf</code>, <code>FALLBACK-PACK-garden-week2-draft.pdf</code> and <code>puentes-test/out/dashboard.html</code>. Always do step 6 live: it's quick, and it's what the teacher cares about most.</p>
+<h2 id="close-840">Close (8:40)</h2>
+<ul>
+<li><strong>What happens next for the teacher (5 min):</strong> follow "What to show at the close" on the Teacher Workflow page: the dashboard, one review finding, one live fix, then "make week 3" running during Q&amp;A.</li>
+<li><strong>The pattern:</strong> "AI drafts, a human approves, and the system packages and delivers."</li>
+<li><strong>Q&amp;A:</strong> short answers are in the runbook's last table.</li>
+<li><strong>Ask for December show-and-tell volunteers</strong> before people leave.</li>
+</ul>
+<p><strong>If it stalls:</strong> narrate what Claude is doing and switch to the matching part of the fallback pack. Don't troubleshoot one attendee's laptop from the front: "pair with your neighbor; I'll come by."</p>
+<h2 id="notes">Notes</h2>
+<p> </p>
+<p> </p>
+<p> </p>
+</body></html>

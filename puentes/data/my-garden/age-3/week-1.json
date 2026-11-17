@@ -1,0 +1,431 @@
+{
+  "status": "DRAFT",
+  "theme": {
+    "es": "Mi huerto",
+    "en": "My garden"
+  },
+  "age": 3,
+  "week": 1,
+  "title": {
+    "es": "Mi huerto: sembramos y aprendemos",
+    "en": "My Garden: We Plant and Learn"
+  },
+  "objectives": [
+    {
+      "es": "Contar hasta 5 objetos del huerto.",
+      "en": "Count up to 5 garden objects."
+    },
+    {
+      "es": "Nombrar cosas del huerto en dos idiomas.",
+      "en": "Name garden things in two languages."
+    },
+    {
+      "es": "Usar las manos y los dedos para explorar, pintar y recoger.",
+      "en": "Use hands and fingers to explore, paint and pick up."
+    }
+  ],
+  "days": [
+    {
+      "day": {
+        "es": "lunes",
+        "en": "Monday"
+      },
+      "activity": {
+        "name": {
+          "es": "Contar zanahorias",
+          "en": "Counting carrots"
+        },
+        "skill_area": {
+          "key": "math",
+          "es": "matemáticas",
+          "en": "math"
+        },
+        "safety_ok_under_3": false,
+        "materials": [
+          {
+            "es": "5 zanahorias de papel naranja",
+            "en": "5 orange paper carrots"
+          },
+          {
+            "es": "un balde o caja",
+            "en": "a bucket or box"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Esconde las zanahorias por el salón.",
+            "en": "Hide the carrots around the room."
+          },
+          {
+            "es": "Busquen juntos y pongan cada una en el balde.",
+            "en": "Look together and put each one in the bucket."
+          },
+          {
+            "es": "Cuenten en voz alta: una, dos, tres...",
+            "en": "Count out loud: one, two, three..."
+          },
+          {
+            "es": "Pregunta: \"¿Cuántas encontramos?\"",
+            "en": "Ask: \"How many did we find?\""
+          }
+        ],
+        "supervision": {
+          "es": "Un adulto cerca para guiar el conteo.",
+          "en": "An adult nearby to guide the counting."
+        },
+        "say_this": {
+          "es": "¡Cinco zanahorias en el balde!",
+          "en": "Five carrots in the bucket!"
+        },
+        "age_range": {
+          "es": "3-4 años",
+          "en": "ages 3-4"
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "martes",
+        "en": "Tuesday"
+      },
+      "activity": {
+        "name": {
+          "es": "¿Qué hay en el huerto?",
+          "en": "What is in the garden?"
+        },
+        "skill_area": {
+          "key": "language",
+          "es": "lenguaje",
+          "en": "language"
+        },
+        "safety_ok_under_3": false,
+        "materials": [
+          {
+            "es": "5 tarjetas con dibujos: semilla, flor, hoja, tierra, gusano",
+            "en": "5 picture cards: seed, flower, leaf, soil, worm"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Muestra una tarjeta a la vez.",
+            "en": "Show one card at a time."
+          },
+          {
+            "es": "Di la palabra en español y luego en inglés.",
+            "en": "Say the word in Spanish, then in English."
+          },
+          {
+            "es": "Pide al niño que repita contigo.",
+            "en": "Ask the child to say it with you."
+          },
+          {
+            "es": "Esconde una tarjeta y pregunta: \"¿Cuál falta?\"",
+            "en": "Hide one card and ask: \"Which one is missing?\""
+          }
+        ],
+        "supervision": {
+          "es": "Un adulto con el niño todo el tiempo.",
+          "en": "An adult with the child the whole time."
+        },
+        "say_this": {
+          "es": "Esta es una semilla. ¡Semilla! / Seed!",
+          "en": "This is a seed. ¡Semilla! / Seed!"
+        },
+        "age_range": {
+          "es": "3-5 años",
+          "en": "ages 3-5"
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "miércoles",
+        "en": "Wednesday"
+      },
+      "activity": {
+        "name": {
+          "es": "Flores con tenedor",
+          "en": "Fork flowers"
+        },
+        "skill_area": {
+          "key": "art",
+          "es": "arte",
+          "en": "art"
+        },
+        "safety_ok_under_3": false,
+        "materials": [
+          {
+            "es": "papel",
+            "en": "paper"
+          },
+          {
+            "es": "pintura lavable no tóxica",
+            "en": "washable non-toxic paint"
+          },
+          {
+            "es": "un plato de papel",
+            "en": "a paper plate"
+          },
+          {
+            "es": "tenedores de plástico",
+            "en": "plastic forks"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Pon un poco de pintura en el plato.",
+            "en": "Put a little paint on the plate."
+          },
+          {
+            "es": "Moja los dientes del tenedor en la pintura.",
+            "en": "Dip the fork's tines in the paint."
+          },
+          {
+            "es": "Presiona el tenedor en el papel para hacer pétalos.",
+            "en": "Press the fork on the paper to make petals."
+          },
+          {
+            "es": "Dibuja un tallo verde con el dedo.",
+            "en": "Draw a green stem with a finger."
+          }
+        ],
+        "supervision": {
+          "es": "Un adulto cerca. Usa tenedores de plástico con puntas romas; el adulto los revisa antes.",
+          "en": "An adult nearby. Use plastic forks with blunt tines; the adult checks them first."
+        },
+        "say_this": {
+          "es": "¡Mira cuántos pétalos tiene tu flor!",
+          "en": "Look how many petals your flower has!"
+        },
+        "age_range": {
+          "es": "3-5 años",
+          "en": "ages 3-5"
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "jueves",
+        "en": "Thursday"
+      },
+      "activity": {
+        "name": {
+          "es": "Tierra de avena",
+          "en": "Oat soil"
+        },
+        "skill_area": {
+          "key": "sensory",
+          "es": "sensorial",
+          "en": "sensory"
+        },
+        "safety_ok_under_3": false,
+        "materials": [
+          {
+            "es": "avena seca en una caja grande",
+            "en": "dry oats in a large box"
+          },
+          {
+            "es": "cacao en polvo (opcional)",
+            "en": "cocoa powder (optional)"
+          },
+          {
+            "es": "cucharas y tazas",
+            "en": "spoons and cups"
+          },
+          {
+            "es": "insectos de papel o un juguete grande (más grande que un tubo de papel higiénico)",
+            "en": "paper bugs or one large toy (bigger than a toilet-paper tube)"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Mezcla la avena con un poco de cacao para que parezca tierra.",
+            "en": "Mix the oats with a little cocoa so it looks like soil."
+          },
+          {
+            "es": "Esconde los insectos dentro.",
+            "en": "Hide the toy bugs inside."
+          },
+          {
+            "es": "Cava con las manos y las cucharas.",
+            "en": "Dig with hands and spoons."
+          },
+          {
+            "es": "Habla de lo que sienten: suave, seca, esponjosa.",
+            "en": "Talk about how it feels: soft, dry, fluffy."
+          }
+        ],
+        "supervision": {
+          "es": "Un adulto con el grupo todo el tiempo; que nadie coma la mezcla. Revisa alergias a la avena, al gluten y al cacao. Si hay alergia, usa papel triturado o la versión sin cacao.",
+          "en": "An adult with the group the whole time; no one eats the mix. Check for oat, gluten and cocoa allergies. If there is an allergy, use shredded paper or the version without cocoa."
+        },
+        "say_this": {
+          "es": "La tierra se siente suave.",
+          "en": "The soil feels soft."
+        },
+        "age_range": {
+          "es": "3-5 años",
+          "en": "ages 3-5"
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "viernes",
+        "en": "Friday"
+      },
+      "activity": {
+        "name": {
+          "es": "Sembrar con pinzas",
+          "en": "Planting with tongs"
+        },
+        "skill_area": {
+          "key": "motor",
+          "es": "motricidad",
+          "en": "motor"
+        },
+        "safety_ok_under_3": false,
+        "materials": [
+          {
+            "es": "una caja de huevos",
+            "en": "an egg carton"
+          },
+          {
+            "es": "pompones grandes o bolas de papel arrugado (más grandes que un tubo de papel higiénico)",
+            "en": "large pom-poms or crumpled paper balls (bigger than a toilet-paper tube)"
+          },
+          {
+            "es": "pinzas de cocina",
+            "en": "kitchen tongs"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Pon las \"semillas\" en un plato.",
+            "en": "Put the \"seeds\" on a plate."
+          },
+          {
+            "es": "Agarra una semilla con las pinzas.",
+            "en": "Pick up a seed with the tongs."
+          },
+          {
+            "es": "Siémbrala en un hueco de la caja.",
+            "en": "Plant it in a hole of the carton."
+          },
+          {
+            "es": "Sigue hasta llenar todos los huecos.",
+            "en": "Keep going until every hole is full."
+          }
+        ],
+        "supervision": {
+          "es": "Un adulto sentado al lado todo el tiempo; que nada se vaya a la boca.",
+          "en": "An adult sitting beside the child the whole time; make sure nothing goes in the mouth."
+        },
+        "say_this": {
+          "es": "¡Una semilla en cada huequito!",
+          "en": "One seed in each little hole!"
+        },
+        "age_range": {
+          "es": "3-5 años",
+          "en": "ages 3-5"
+        }
+      }
+    }
+  ],
+  "materials_week": [
+    {
+      "es": "5 zanahorias de papel naranja",
+      "en": "5 orange paper carrots"
+    },
+    {
+      "es": "un balde o caja",
+      "en": "a bucket or box"
+    },
+    {
+      "es": "5 tarjetas con dibujos: semilla, flor, hoja, tierra, gusano",
+      "en": "5 picture cards: seed, flower, leaf, soil, worm"
+    },
+    {
+      "es": "papel",
+      "en": "paper"
+    },
+    {
+      "es": "pintura lavable no tóxica",
+      "en": "washable non-toxic paint"
+    },
+    {
+      "es": "un plato de papel",
+      "en": "a paper plate"
+    },
+    {
+      "es": "tenedores de plástico",
+      "en": "plastic forks"
+    },
+    {
+      "es": "avena seca en una caja grande",
+      "en": "dry oats in a large box"
+    },
+    {
+      "es": "cacao en polvo (opcional)",
+      "en": "cocoa powder (optional)"
+    },
+    {
+      "es": "cucharas y tazas",
+      "en": "spoons and cups"
+    },
+    {
+      "es": "insectos de papel o un juguete grande (más grande que un tubo de papel higiénico)",
+      "en": "paper bugs or one large toy (bigger than a toilet-paper tube)"
+    },
+    {
+      "es": "una caja de huevos",
+      "en": "an egg carton"
+    },
+    {
+      "es": "pompones grandes o bolas de papel arrugado (más grandes que un tubo de papel higiénico)",
+      "en": "large pom-poms or crumpled paper balls (bigger than a toilet-paper tube)"
+    },
+    {
+      "es": "pinzas de cocina",
+      "en": "kitchen tongs"
+    }
+  ],
+  "vocabulary": [
+    {
+      "es": "huerto",
+      "en": "garden"
+    },
+    {
+      "es": "semilla",
+      "en": "seed"
+    },
+    {
+      "es": "tierra",
+      "en": "soil"
+    },
+    {
+      "es": "zanahoria",
+      "en": "carrot"
+    },
+    {
+      "es": "flor",
+      "en": "flower"
+    },
+    {
+      "es": "hoja",
+      "en": "leaf"
+    },
+    {
+      "es": "raíz",
+      "en": "root"
+    },
+    {
+      "es": "regar",
+      "en": "to water"
+    },
+    {
+      "es": "gusano",
+      "en": "worm"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Panel de revisión</title><style>
+body{font-family:"Helvetica Neue",Arial,sans-serif;margin:0;padding:32px;background:#fff;color:#2b2b2b}
+h1{margin:0 0 4px} .sub{color:#666;margin-bottom:20px} .en{color:#666}
+table{border-collapse:collapse;width:100%;max-width:1000px} th{background:#eaf4ec;text-align:left} th,td{border:1px solid #cfd8d1;padding:10px 12px;vertical-align:top}
+.st{display:inline-block;padding:3px 10px;border-radius:12px;font-size:13px;font-weight:600;white-space:nowrap} a{color:#2e7d4a} code{background:#f2f2f2;padding:2px 5px;border-radius:4px}
+</style></head><body><h1>Panel de revisión <span class="en">/ Review dashboard</span></h1>
+<div class="sub">Pequeños Puentes Bilingües · Borrador / Draft: <b>1</b> · Por revisar / Needs review: <b>0</b> · Aprobado / Approved: <b>1</b></div>
+<table><tr><th>Tema / Theme</th><th>Edad / Age</th><th>Semana / Week</th><th>Título / Title</th><th>Estado / Status</th><th>Fecha / Date</th><th></th></tr><tr><td>my-garden</td><td>3</td><td>1</td><td><b>Mi huerto: sembramos y aprendemos</b><br><span class='en'>My Garden: We Plant and Learn</span></td><td><span class='st' style='color:#2e7d4a;background:#e3f3e8'>Aprobado / Approved</span></td><td>2026-11-16</td><td><a href='my-garden/age-3/week-1/index.html'>Abrir / Open</a></td></tr><tr><td>my-garden</td><td>3</td><td>2</td><td><b>Mi huerto: agua, sol y crecer</b><br><span class='en'>My Garden: Water, Sun and Growing</span></td><td><span class='st' style='color:#8a6d1f;background:#fbf3d9'>Borrador / Draft</span></td><td>2026-11-16</td><td><a href='my-garden/age-3/week-2/index.html'>Abrir / Open</a></td></tr></table>
+<p class="sub">Para cambiar el estado / To change a status: <code>python3 set_status.py --theme my-garden --age 3 --week 1 --status approved</code></p>
+</body></html>

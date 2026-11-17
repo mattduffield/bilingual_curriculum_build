@@ -1,0 +1,63 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Preview</title><style>
+@page { size: 8.5in 11in; margin: 0.5in; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Helvetica Neue", Arial, sans-serif; color: #2b2b2b; font-size: 15pt; line-height: 1.35; background: #e8e8e8; }
+.page { width: 7.5in; height: 10in; overflow: hidden; position: relative; background: #fff; margin: 0.3in auto;
+  padding: 0.1in 0.1in 0.1in; display: flex; flex-direction: column; break-after: page; page-break-after: always; }
+.page:last-child { break-after: auto; page-break-after: auto; }
+.draft { position: absolute; top: 0; right: 0; font-size: 10pt; font-weight: 700; letter-spacing: 2px; color: #b5483a; border: 1.5px solid #b5483a; padding: 1px 8px; border-radius: 4px; }
+.brand { font-size: 10pt; color: #5b9a6b; letter-spacing: 1px; text-transform: uppercase; }
+h1 { font-size: 34pt; margin: 0; line-height: 1.1; } h2 { font-size: 24pt; margin: 0.1in 0 0.05in; }
+.en { color: #555; } .sub { font-size: 13pt; color: #666; }
+.cover { text-align: center; justify-content: center; align-items: center; gap: 0.25in; }
+.cover svg { width: 4.6in; height: 3.6in; }
+.cover .age { font-size: 20pt; color: #5b9a6b; border: 2px solid #5b9a6b; border-radius: 30px; padding: 4px 24px; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3in; }
+.cols h3 { margin: 0 0 6px; font-size: 13pt; color: #5b9a6b; text-transform: uppercase; letter-spacing: 1px; }
+ol, ul { margin: 0; padding-left: 1.2em; } li { margin-bottom: 8px; }
+table { width: 100%; border-collapse: collapse; font-size: 13pt; margin: 0.1in 0; }
+th { background: #eaf4ec; text-align: left; } th, td { border: 1px solid #cfd8d1; padding: 8px 10px; vertical-align: top; }
+.box { border: 2px solid #5b9a6b; border-radius: 10px; padding: 10px 14px; background: #eaf4ec; margin-top: 0.12in; }
+.box b.l { font-size: 11pt; color: #5b9a6b; text-transform: uppercase; letter-spacing: 1px; display: block; }
+.draw { flex: 1; border: 2px dashed #9bb8a2; border-radius: 12px; margin-top: 0.15in; padding: 8px 12px; font-size: 11pt; color: #888; }
+.tag { font-size: 12pt; color: #5b9a6b; }
+.cards { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1.6in; gap: 0.12in 0.2in; margin-top: 0.1in; }
+.card { display: grid; grid-template-columns: 1fr 1fr; border: 1.5px solid #9bb8a2; border-radius: 8px; }
+.card div { display: flex; align-items: center; justify-content: center; font-size: 22pt; font-weight: 700; text-align: center; padding: 4px; }
+.card div + div { border-left: 2px dashed #9bb8a2; color: #555; font-weight: 400; }
+.card.blank div { color: #bbb; font-size: 12pt; font-weight: 400; }
+.mats { font-size: 10pt; line-height: 1.25; columns: 2; column-gap: 0.3in; } .mats li { margin-bottom: 3px; break-inside: avoid; }
+.objs { font-size: 12pt; } .objs li { margin-bottom: 4px; } .plan td, .plan th { padding: 5px 8px; }
+@media print { body { background: #fff; } .page { margin: 0; } }
+
+body{background:#f4f1ea}
+.canvas{width:1500px;height:2000px;margin:0 auto;padding:40px;display:flex;flex-direction:column;gap:30px;background:#f4f1ea}
+.bar{text-align:center;color:#3d6b4a;font-family:"Helvetica Neue",Arial,sans-serif}
+.bar b{display:block;font-size:46px;color:#2b2b2b}.bar span{font-size:26px}
+.grid{display:grid;grid-template-columns:648px 648px;gap:60px;justify-content:center}
+.slot{width:648px;height:864px;box-shadow:0 6px 22px rgba(0,0,0,.18);background:#fff}
+.slot .page{transform:scale(.9);transform-origin:top left;margin:0}
+</style></head><body><div class="canvas"><div class="bar"><b>Mi huerto · My Garden</b><span>Pequeños Puentes Bilingües · Edad 3 · Age 3</span></div><div class="grid"><div class="slot"><section class="page cover"><span class="draft">BORRADOR / DRAFT</span><div class="brand">Pequeños Puentes Bilingües</div>
+      <h1>Mi huerto: agua, sol y crecer</h1><h1 class="en" style="font-size:24pt">My Garden: Water, Sun and Growing</h1>
+      <svg viewBox="0 0 460 360" fill="none" stroke="#5b9a6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20 300 H440"/><path d="M60 300 q10 -14 22 0 M370 300 q12 -14 24 0"/>
+  <path d="M230 300 V150"/><path d="M230 220 q-60 -10 -70 -70 q60 0 70 70"/><path d="M230 190 q60 -10 70 -70 q-60 0 -70 70"/>
+  <circle cx="230" cy="110" r="18"/><path d="M230 92 q-6 -30 -28 -26 q-4 24 28 26 M248 110 q30 -6 26 -28 q-24 -4 -26 28 M230 128 q6 30 28 26 q4 -24 -28 -26 M212 110 q-30 6 -26 28 q24 4 26 -28"/>
+  <path d="M90 300 q-30 -60 0 -120 q30 60 0 120 M90 180 q-14 -26 -4 -42 M90 180 q14 -26 4 -42"/>
+  <path d="M350 300 c-30 0 -34 -50 0 -50 c34 0 30 50 0 50 M350 250 q-6 -20 6 -30 M350 250 q14 -14 26 -10"/>
+ </svg>
+      <div class="age">Edad 3 · Age 3</div>
+      <div class="sub">Semana 2 · Week 2</div></section></div><div class="slot"><section class="page "><span class="draft">BORRADOR / DRAFT</span><div class="tag">lunes / Monday · matemáticas / math · 3-4 años / ages 3-4</div>
+      <h1 style="font-size:28pt">Flores grandes y pequeñas</h1><div class="en" style="font-size:20pt">Big and small flowers</div>
+      <div class="cols" style="margin-top:0.12in"><div><h3>Materiales</h3>6 flores de papel: 3 grandes y 3 pequeñas, 2 platos de papel</div><div class="en"><h3>Materials</h3>6 paper flowers: 3 big and 3 small, 2 paper plates</div></div>
+      <div class="cols" style="margin-top:0.12in"><ol><li>Pon todas las flores en la mesa.</li><li>Muestra una flor grande y una pequeña.</li><li>Pongan las grandes en un plato y las pequeñas en el otro.</li><li>Cuenten cuántas hay en cada plato.</li></ol><ol class="en"><li>Put all the flowers on the table.</li><li>Show one big flower and one small flower.</li><li>Put the big ones on one plate and the small ones on the other.</li><li>Count how many are on each plate.</li></ol></div>
+      <div class="box"><b class="l">Di esto / Say this</b>“¡Esta flor es grande y esta es pequeña!”<br><span class="en">“This flower is big and this one is small!”</span></div>
+      <div class="box" style="background:#fff"><b class="l">Supervisión / Supervision</b>Un adulto cerca para guiar y hacer preguntas.<br><span class="en">An adult nearby to guide and ask questions.</span></div>
+      <div class="draw">Dibuja aquí / Draw here</div></section></div><div class="slot"><section class="page "><span class="draft">BORRADOR / DRAFT</span><div class="tag">miércoles / Wednesday · arte / art · 3-5 años / ages 3-5</div>
+      <h1 style="font-size:28pt">Gotas con esponja</h1><div class="en" style="font-size:20pt">Sponge raindrops</div>
+      <div class="cols" style="margin-top:0.12in"><div><h3>Materiales</h3>papel, pintura azul lavable no tóxica, un plato de papel, trozos grandes de esponja de cocina (más grandes que un tubo de papel higiénico)</div><div class="en"><h3>Materials</h3>paper, washable non-toxic blue paint, a paper plate, big pieces of kitchen sponge (bigger than a toilet-paper tube)</div></div>
+      <div class="cols" style="margin-top:0.12in"><ol><li>Pon un poco de pintura azul en el plato.</li><li>Moja un trozo de esponja en la pintura.</li><li>Presiona la esponja en el papel para hacer una gota.</li><li>Haz muchas gotas: ¡una lluvia!</li></ol><ol class="en"><li>Put a little blue paint on the plate.</li><li>Dip a piece of sponge in the paint.</li><li>Press the sponge on the paper to make a drop.</li><li>Make lots of drops: a rainstorm!</li></ol></div>
+      <div class="box"><b class="l">Di esto / Say this</b>“¡Mira cuántas gotas de lluvia!”<br><span class="en">“Look how many raindrops!”</span></div>
+      <div class="box" style="background:#fff"><b class="l">Supervisión / Supervision</b>Un adulto cerca; revisa que los trozos de esponja sean grandes y que nadie los muerda.<br><span class="en">An adult nearby; check that the sponge pieces are big and that no one chews them.</span></div>
+      <div class="draw">Dibuja aquí / Draw here</div></section></div><div class="slot"><section class="page "><span class="draft">BORRADOR / DRAFT</span><div class="brand">Pequeños Puentes Bilingües</div><h2>Tarjetas de palabras <span class="en">/ Word cards</span></h2>
+      <div class="sub">Recorta y dobla por la línea punteada. / Cut out and fold on the dotted line.</div><div class="cards"><div class="card"><div>lluvia</div><div>rain</div></div><div class="card"><div>gota</div><div>drop</div></div><div class="card"><div>sol</div><div>sun</div></div><div class="card"><div>nube</div><div>cloud</div></div><div class="card"><div>agua</div><div>water</div></div><div class="card"><div>grande</div><div>big</div></div><div class="card"><div>pequeño</div><div>small</div></div><div class="card"><div>brote</div><div>sprout</div></div><div class="card"><div>crecer</div><div>to grow</div></div><div class="card"><div>regadera</div><div>watering can</div></div></div></section></div></div></div></body></html>

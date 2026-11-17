@@ -1,0 +1,411 @@
+{
+  "status": "DRAFT",
+  "theme_slug": "my-garden",
+  "age": 3,
+  "week": 1,
+  "skill_areas": [
+    "math",
+    "language",
+    "art",
+    "sensory",
+    "motor"
+  ],
+  "title": {
+    "es": "Mi jardín",
+    "en": "My Garden"
+  },
+  "objectives": [
+    {
+      "es": "Contar y clasificar hasta 5 objetos del jardín.",
+      "en": "Count and sort up to 5 garden objects."
+    },
+    {
+      "es": "Usar palabras nuevas del jardín en español e inglés.",
+      "en": "Use new garden words in Spanish and English."
+    },
+    {
+      "es": "Moverse, explorar y crear con materiales de la naturaleza.",
+      "en": "Move, explore, and create with natural materials."
+    }
+  ],
+  "days": [
+    {
+      "day": {
+        "es": "Lunes",
+        "en": "Monday"
+      },
+      "activity": {
+        "name": {
+          "es": "Contar semillas",
+          "en": "Counting seeds"
+        },
+        "skill_area": "math",
+        "age_range": {
+          "es": "3-4 años",
+          "en": "3-4 years"
+        },
+        "materials": [
+          {
+            "es": "5 círculos de papel café (las semillas)",
+            "en": "5 brown paper circles (the seeds)"
+          },
+          {
+            "es": "2 vasos de papel",
+            "en": "2 paper cups"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Pon las semillas de papel en la mesa.",
+            "en": "Put the paper seeds on the table."
+          },
+          {
+            "es": "Cuenten juntos mientras ponen 2 semillas en un vaso.",
+            "en": "Count together as you put 2 seeds in one cup."
+          },
+          {
+            "es": "Pon las otras 3 en el otro vaso y pregunta: \"¿En cuál hay más?\"",
+            "en": "Put the other 3 in the second cup and ask: \"Which one has more?\""
+          }
+        ],
+        "say_this": {
+          "es": "¡Una, dos, tres semillas en el vaso!",
+          "en": "One, two, three seeds in the cup!"
+        },
+        "supervision": {
+          "es": "Adulto cerca para contar con el niño.",
+          "en": "Adult nearby to count with the child."
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "Martes",
+        "en": "Tuesday"
+      },
+      "activity": {
+        "name": {
+          "es": "La canasta del jardín",
+          "en": "The garden basket"
+        },
+        "skill_area": "language",
+        "age_range": {
+          "es": "3-5 años",
+          "en": "3-5 years"
+        },
+        "materials": [
+          {
+            "es": "una canasta o bolsa de tela",
+            "en": "a basket or cloth bag"
+          },
+          {
+            "es": "una hoja, una flor de papel, una piedra lisa más grande que el puño del niño o la niña y un cucharón de juguete",
+            "en": "a leaf, a paper flower, a smooth stone bigger than the child's fist, and a toy scoop"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Esconde los objetos en la canasta.",
+            "en": "Hide the objects in the basket."
+          },
+          {
+            "es": "El niño saca un objeto y lo muestra.",
+            "en": "The child pulls out one object and shows it."
+          },
+          {
+            "es": "Pregunta: \"¿Qué es?\" Ayuda con la palabra si hace falta.",
+            "en": "Ask: \"What is it?\" Help with the word if needed."
+          },
+          {
+            "es": "Repitan la palabra juntos en español y en inglés.",
+            "en": "Say the word together in Spanish and English."
+          }
+        ],
+        "say_this": {
+          "es": "¡Es una hoja verde! Hoja. Leaf.",
+          "en": "It's a green leaf! Hoja. Leaf."
+        },
+        "supervision": {
+          "es": "Adulto sentado junto al niño o la niña. La piedra debe ser más grande que su puño.",
+          "en": "Adult seated next to the child. The stone must be bigger than the child's fist."
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "Miércoles",
+        "en": "Wednesday"
+      },
+      "activity": {
+        "name": {
+          "es": "Flores con tubos",
+          "en": "Tube-print flowers"
+        },
+        "skill_area": "art",
+        "age_range": {
+          "es": "3-5 años",
+          "en": "3-5 years"
+        },
+        "materials": [
+          {
+            "es": "1 tubo de papel higiénico",
+            "en": "1 toilet-paper tube"
+          },
+          {
+            "es": "pintura lavable",
+            "en": "washable paint"
+          },
+          {
+            "es": "un plato de papel",
+            "en": "a paper plate"
+          },
+          {
+            "es": "hojas de papel",
+            "en": "sheets of paper"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Aprieta el tubo para hacer forma de pétalo.",
+            "en": "Pinch the tube into a petal shape."
+          },
+          {
+            "es": "Pon un poco de pintura en el plato.",
+            "en": "Put a little paint on the plate."
+          },
+          {
+            "es": "Sella el tubo en la pintura y luego en el papel.",
+            "en": "Dip the tube in the paint, then stamp it on the paper."
+          },
+          {
+            "es": "Haz 5 sellos en círculo para formar una flor.",
+            "en": "Make 5 stamps in a circle to form a flower."
+          }
+        ],
+        "say_this": {
+          "es": "¡Mira cuántos pétalos! Una flor de colores.",
+          "en": "Look at all the petals! A colorful flower."
+        },
+        "supervision": {
+          "es": "Adulto presente todo el tiempo. Pintura no tóxica y sin llevarla a la boca.",
+          "en": "Adult present the whole time. Non-toxic paint, kept out of mouths."
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "Jueves",
+        "en": "Thursday"
+      },
+      "activity": {
+        "name": {
+          "es": "Tierra y lombrices",
+          "en": "Soil and worms"
+        },
+        "skill_area": "sensory",
+        "age_range": {
+          "es": "3-5 años",
+          "en": "3-5 years"
+        },
+        "materials": [
+          {
+            "es": "una tina o caja grande",
+            "en": "a large tub or box"
+          },
+          {
+            "es": "tierra de maceta nueva (no de la calle) o avena seca",
+            "en": "new potting soil (not from outdoors) or dry oats"
+          },
+          {
+            "es": "espagueti cocido y frío (las lombrices)",
+            "en": "cooked, cooled spaghetti (the worms)"
+          },
+          {
+            "es": "cucharas y vasos",
+            "en": "spoons and cups"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Esconde las lombrices en la tierra.",
+            "en": "Hide the worms in the soil."
+          },
+          {
+            "es": "El niño busca con las manos y las cucharas.",
+            "en": "The child searches with hands and spoons."
+          },
+          {
+            "es": "Pongan las lombrices en un vaso y cuéntenlas.",
+            "en": "Put the worms in a cup and count them."
+          },
+          {
+            "es": "Hablen de cómo se siente: suave, húmeda, fría.",
+            "en": "Talk about how it feels: soft, damp, cold."
+          }
+        ],
+        "say_this": {
+          "es": "¡Encontraste una lombriz! La tierra está suave.",
+          "en": "You found a worm! The soil is soft."
+        },
+        "supervision": {
+          "es": "Adulto muy cerca. Nada a la boca. Pregunta por alergias (trigo, avena). Lava las manos y tira todo al terminar.",
+          "en": "Adult very close. Nothing in mouths. Ask about allergies (wheat, oats). Wash hands and throw everything away when done."
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "Viernes",
+        "en": "Friday"
+      },
+      "activity": {
+        "name": {
+          "es": "Crece como una flor",
+          "en": "Grow like a flower"
+        },
+        "skill_area": "motor",
+        "age_range": {
+          "es": "2-5 años",
+          "en": "2-5 years"
+        },
+        "materials": [
+          {
+            "es": "espacio libre en el piso",
+            "en": "clear floor space"
+          },
+          {
+            "es": "una cobija pequeña (opcional)",
+            "en": "a small blanket (optional)"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Agáchense como una semilla pequeñita.",
+            "en": "Crouch down like a tiny seed."
+          },
+          {
+            "es": "Diga: \"Sale el sol, cae la lluvia\" y muevan los dedos como gotas.",
+            "en": "Say: \"The sun comes out, the rain falls\" and wiggle fingers like drops."
+          },
+          {
+            "es": "Levántense despacito, estirando los brazos como un tallo.",
+            "en": "Rise slowly, stretching arms up like a stem."
+          },
+          {
+            "es": "Abran las manos como una flor y balancéense con el viento.",
+            "en": "Open your hands like a flower and sway in the wind."
+          }
+        ],
+        "say_this": {
+          "es": "¡Crece, crece, florecita!",
+          "en": "Grow, grow, little flower!"
+        },
+        "supervision": {
+          "es": "Adulto cerca y haciendo los movimientos con el niño.",
+          "en": "Adult nearby, doing the moves along with the child."
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "es": "5 círculos de papel café (las semillas)",
+      "en": "5 brown paper circles (the seeds)"
+    },
+    {
+      "es": "2 vasos de papel",
+      "en": "2 paper cups"
+    },
+    {
+      "es": "una canasta o bolsa de tela",
+      "en": "a basket or cloth bag"
+    },
+    {
+      "es": "una hoja, una flor de papel, una piedra lisa más grande que el puño del niño o la niña y un cucharón de juguete",
+      "en": "a leaf, a paper flower, a smooth stone bigger than the child's fist, and a toy scoop"
+    },
+    {
+      "es": "1 tubo de papel higiénico",
+      "en": "1 toilet-paper tube"
+    },
+    {
+      "es": "pintura lavable",
+      "en": "washable paint"
+    },
+    {
+      "es": "un plato de papel",
+      "en": "a paper plate"
+    },
+    {
+      "es": "hojas de papel",
+      "en": "sheets of paper"
+    },
+    {
+      "es": "una tina o caja grande",
+      "en": "a large tub or box"
+    },
+    {
+      "es": "tierra de maceta nueva (no de la calle) o avena seca",
+      "en": "new potting soil (not from outdoors) or dry oats"
+    },
+    {
+      "es": "espagueti cocido y frío (las lombrices)",
+      "en": "cooked, cooled spaghetti (the worms)"
+    },
+    {
+      "es": "cucharas y vasos",
+      "en": "spoons and cups"
+    },
+    {
+      "es": "espacio libre en el piso",
+      "en": "clear floor space"
+    },
+    {
+      "es": "una cobija pequeña (opcional)",
+      "en": "a small blanket (optional)"
+    }
+  ],
+  "vocabulary": [
+    {
+      "es": "semilla",
+      "en": "seed"
+    },
+    {
+      "es": "flor",
+      "en": "flower"
+    },
+    {
+      "es": "tierra",
+      "en": "soil"
+    },
+    {
+      "es": "raíz",
+      "en": "root"
+    },
+    {
+      "es": "hoja",
+      "en": "leaf"
+    },
+    {
+      "es": "tallo",
+      "en": "stem"
+    },
+    {
+      "es": "lombriz",
+      "en": "worm"
+    },
+    {
+      "es": "sol",
+      "en": "sun"
+    },
+    {
+      "es": "agua",
+      "en": "water"
+    },
+    {
+      "es": "regar",
+      "en": "to water"
+    }
+  ],
+  "language_mode": "bilingual"
+}

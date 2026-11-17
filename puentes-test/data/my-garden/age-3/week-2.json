@@ -1,0 +1,423 @@
+{
+  "status": "DRAFT",
+  "theme_slug": "my-garden",
+  "age": 3,
+  "week": 2,
+  "skill_areas": [
+    "math",
+    "language",
+    "art",
+    "sensory",
+    "motor"
+  ],
+  "title": {
+    "es": "Mi jardín: bichos y lluvia",
+    "en": "My Garden: Bugs and Rain"
+  },
+  "objectives": [
+    {
+      "es": "Contar hasta 5 puntos y decir cuál grupo tiene más.",
+      "en": "Count up to 5 dots and say which group has more."
+    },
+    {
+      "es": "Nombrar bichos y palabras de la lluvia en español y en inglés.",
+      "en": "Name bugs and rain words in Spanish and English."
+    },
+    {
+      "es": "Explorar la lluvia con agua, pintura y movimiento.",
+      "en": "Explore rain with water, paint, and movement."
+    }
+  ],
+  "days": [
+    {
+      "day": {
+        "es": "Lunes",
+        "en": "Monday"
+      },
+      "activity": {
+        "name": {
+          "es": "Mariquitas y puntos",
+          "en": "Ladybug dots"
+        },
+        "skill_area": "math",
+        "age_range": {
+          "es": "3-4 años",
+          "en": "3-4 years"
+        },
+        "materials": [
+          {
+            "es": "5 círculos de papel rojo (las mariquitas)",
+            "en": "5 red paper circles (the ladybugs)"
+          },
+          {
+            "es": "1 marcador negro lavable",
+            "en": "1 washable black marker"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Dibuja 1, 2, 3, 4 y 5 puntos negros en las mariquitas, una cantidad distinta en cada una.",
+            "en": "Draw 1, 2, 3, 4, and 5 black dots on the ladybugs, a different number on each."
+          },
+          {
+            "es": "Mezcla las mariquitas sobre la mesa.",
+            "en": "Mix the ladybugs up on the table."
+          },
+          {
+            "es": "Pide al niño o a la niña que las ponga en fila, de la que tiene menos puntos a la que tiene más.",
+            "en": "Ask the child to line them up, from the fewest dots to the most."
+          },
+          {
+            "es": "Cuenten los puntos de cada una con el dedo y pregunta: \"¿Cuál tiene más?\"",
+            "en": "Count the dots on each one with a finger and ask: \"Which one has the most?\""
+          }
+        ],
+        "say_this": {
+          "es": "¡Una mariquita con tres puntos negros!",
+          "en": "A ladybug with three black dots!"
+        },
+        "supervision": {
+          "es": "Adulto cerca. Cuenta junto con el niño o la niña.",
+          "en": "Adult nearby. Count along with the child."
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "Martes",
+        "en": "Tuesday"
+      },
+      "activity": {
+        "name": {
+          "es": "¿Quién soy?",
+          "en": "Who am I?"
+        },
+        "skill_area": "language",
+        "age_range": {
+          "es": "3-5 años",
+          "en": "3-5 years"
+        },
+        "materials": [
+          {
+            "es": "4 hojas de papel blanco",
+            "en": "4 sheets of white paper"
+          },
+          {
+            "es": "crayones o marcadores",
+            "en": "crayons or markers"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Dibuja una abeja, una mariposa, una hormiga y un caracol, uno en cada hoja.",
+            "en": "Draw a bee, a butterfly, an ant, and a snail, one on each sheet."
+          },
+          {
+            "es": "Pon las hojas en el piso o sobre la mesa.",
+            "en": "Put the sheets on the floor or on the table."
+          },
+          {
+            "es": "Di una pista, por ejemplo: \"Hago zzzz y vuelo de flor en flor\".",
+            "en": "Give a clue, like: \"I go bzzz and fly from flower to flower.\""
+          },
+          {
+            "es": "El niño o la niña señala el dibujo y dice el nombre. Repitan juntos en español y en inglés.",
+            "en": "The child points to the drawing and says the name. Repeat together in Spanish and English."
+          }
+        ],
+        "say_this": {
+          "es": "¡Zzzz! ¡Es una abeja!",
+          "en": "Bzzz! It's a bee!"
+        },
+        "supervision": {
+          "es": "Adulto presente todo el tiempo. Da las pistas y ayuda con las palabras.",
+          "en": "Adult with the child the whole time. Give the clues and help with the words."
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "Miércoles",
+        "en": "Wednesday"
+      },
+      "activity": {
+        "name": {
+          "es": "Nube con lluvia",
+          "en": "Cloud and rain"
+        },
+        "skill_area": "art",
+        "age_range": {
+          "es": "3-5 años",
+          "en": "3-5 years"
+        },
+        "materials": [
+          {
+            "es": "1 hoja de papel blanco",
+            "en": "1 sheet of white paper"
+          },
+          {
+            "es": "1 crayón gris",
+            "en": "1 gray crayon"
+          },
+          {
+            "es": "pintura lavable azul",
+            "en": "washable blue paint"
+          },
+          {
+            "es": "1 plato de papel",
+            "en": "1 paper plate"
+          },
+          {
+            "es": "papel o un mantel para cubrir la mesa",
+            "en": "paper or a tablecloth to cover the table"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Cubre la mesa. Dibuja una nube grande en la parte de arriba de la hoja.",
+            "en": "Cover the table. Draw a big cloud at the top of the sheet."
+          },
+          {
+            "es": "Pon un poco de pintura azul en el plato.",
+            "en": "Put a little blue paint on the plate."
+          },
+          {
+            "es": "El niño o la niña moja la punta del dedo y hace gotas de lluvia debajo de la nube.",
+            "en": "The child dips a fingertip and makes raindrops under the cloud."
+          },
+          {
+            "es": "Cuenten las gotas juntos. Lávense las manos al terminar.",
+            "en": "Count the drops together. Wash hands when done."
+          }
+        ],
+        "say_this": {
+          "es": "¡Cae la lluvia! Una gota, dos gotas, tres gotas.",
+          "en": "The rain is falling! One drop, two drops, three drops."
+        },
+        "supervision": {
+          "es": "Adulto presente todo el tiempo. Pintura no tóxica; nada a la boca.",
+          "en": "Adult with the child the whole time. Non-toxic paint; nothing in mouths."
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "Jueves",
+        "en": "Thursday"
+      },
+      "activity": {
+        "name": {
+          "es": "Charco de agua",
+          "en": "Puddle play"
+        },
+        "skill_area": "sensory",
+        "age_range": {
+          "es": "3-5 años",
+          "en": "3-5 years"
+        },
+        "materials": [
+          {
+            "es": "1 recipiente bajo o bandeja",
+            "en": "1 shallow tub or tray"
+          },
+          {
+            "es": "agua (máximo 5 cm o 2 pulgadas)",
+            "en": "water (5 cm or 2 inches at most)"
+          },
+          {
+            "es": "1 esponja",
+            "en": "1 sponge"
+          },
+          {
+            "es": "2 vasos de plástico",
+            "en": "2 plastic cups"
+          },
+          {
+            "es": "1 toalla",
+            "en": "1 towel"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Pon la toalla en el piso y el recipiente encima. Echa 5 cm (2 pulgadas) de agua.",
+            "en": "Put the towel on the floor and the tub on top. Add 5 cm (2 inches) of water."
+          },
+          {
+            "es": "Mojen la esponja y exprímanla sobre el recipiente: ¡llueve!",
+            "en": "Soak the sponge and squeeze it over the tub: it's raining!"
+          },
+          {
+            "es": "Llenen un vaso y viertan el agua en el otro.",
+            "en": "Fill one cup and pour the water into the other."
+          },
+          {
+            "es": "Hablen de lo que sienten: mojado, fresco, resbaloso. Seca el piso al terminar.",
+            "en": "Talk about how it feels: wet, cool, slippery. Dry the floor when done."
+          }
+        ],
+        "say_this": {
+          "es": "¡Una gota, dos gotas, un charco!",
+          "en": "One drop, two drops, a puddle!"
+        },
+        "supervision": {
+          "es": "Adulto presente todo el tiempo, siempre junto al agua.",
+          "en": "Adult with the child the whole time, right next to the water."
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "Viernes",
+        "en": "Friday"
+      },
+      "activity": {
+        "name": {
+          "es": "Salta el charco",
+          "en": "Jump the puddle"
+        },
+        "skill_area": "motor",
+        "age_range": {
+          "es": "3-5 años",
+          "en": "3-5 years"
+        },
+        "materials": [
+          {
+            "es": "5 hojas de papel azul (los charcos)",
+            "en": "5 sheets of blue paper (the puddles)"
+          },
+          {
+            "es": "cinta adhesiva",
+            "en": "tape"
+          },
+          {
+            "es": "espacio libre en el piso",
+            "en": "clear floor space"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Pega las hojas azules al piso con cinta, en fila y con espacio entre ellas.",
+            "en": "Tape the blue sheets to the floor in a row, with space between them."
+          },
+          {
+            "es": "Abran un paraguas imaginario sobre la cabeza.",
+            "en": "Open an imaginary umbrella over your head."
+          },
+          {
+            "es": "Caminen hasta cada charco y salten sobre él con los dos pies.",
+            "en": "Walk to each puddle and jump over it with both feet."
+          },
+          {
+            "es": "Cuenten los charcos que saltaron. ¡Ahora háganlo otra vez, más rápido!",
+            "en": "Count the puddles you jumped. Now do it again, faster!"
+          }
+        ],
+        "say_this": {
+          "es": "¡Salto el charco con los dos pies!",
+          "en": "I jump the puddle with both feet!"
+        },
+        "supervision": {
+          "es": "Adulto cerca. Pega bien las hojas. Sin calcetines y sin juguetes en el piso.",
+          "en": "Adult nearby. Tape the sheets down. No socks, no toys on the floor."
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "es": "papel rojo para recortar 5 círculos",
+      "en": "red paper to cut into 5 circles"
+    },
+    {
+      "es": "5 hojas de papel blanco (4 para los bichos y 1 para la nube)",
+      "en": "5 sheets of white paper (4 for the bugs and 1 for the cloud)"
+    },
+    {
+      "es": "5 hojas de papel azul",
+      "en": "5 sheets of blue paper"
+    },
+    {
+      "es": "1 marcador negro lavable",
+      "en": "1 washable black marker"
+    },
+    {
+      "es": "crayones o marcadores (uno gris)",
+      "en": "crayons or markers (one gray)"
+    },
+    {
+      "es": "pintura lavable azul",
+      "en": "washable blue paint"
+    },
+    {
+      "es": "1 plato de papel",
+      "en": "1 paper plate"
+    },
+    {
+      "es": "papel o un mantel para cubrir la mesa",
+      "en": "paper or a tablecloth to cover the table"
+    },
+    {
+      "es": "cinta adhesiva",
+      "en": "tape"
+    },
+    {
+      "es": "1 recipiente bajo o bandeja",
+      "en": "1 shallow tub or tray"
+    },
+    {
+      "es": "1 esponja",
+      "en": "1 sponge"
+    },
+    {
+      "es": "2 vasos de plástico",
+      "en": "2 plastic cups"
+    },
+    {
+      "es": "1 toalla",
+      "en": "1 towel"
+    }
+  ],
+  "vocabulary": [
+    {
+      "es": "mariquita",
+      "en": "ladybug"
+    },
+    {
+      "es": "abeja",
+      "en": "bee"
+    },
+    {
+      "es": "mariposa",
+      "en": "butterfly"
+    },
+    {
+      "es": "hormiga",
+      "en": "ant"
+    },
+    {
+      "es": "caracol",
+      "en": "snail"
+    },
+    {
+      "es": "lluvia",
+      "en": "rain"
+    },
+    {
+      "es": "nube",
+      "en": "cloud"
+    },
+    {
+      "es": "gota",
+      "en": "drop"
+    },
+    {
+      "es": "charco",
+      "en": "puddle"
+    },
+    {
+      "es": "paraguas",
+      "en": "umbrella"
+    }
+  ],
+  "language_mode": "bilingual"
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+@page{size:letter portrait;margin:.42in .48in}*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:8.3pt;line-height:1.34;color:#16202e}
+h1{font-size:15.5pt;color:#0b5394;margin-bottom:2pt}
+h2{font-size:10.5pt;color:#fff;background:#0b5394;padding:3pt 7pt;margin:11pt 0 5pt;border-radius:3pt}
+h3{font-size:9.4pt;color:#0b5394;margin:8pt 0 3pt;border-bottom:.8pt solid #d8dee9;padding-bottom:1.5pt}
+p{margin-bottom:4pt}ul,ol{margin:0 0 5pt 15pt}li{margin-bottom:2.4pt}
+pre{background:#f4f6fa;border-left:2.5pt solid #0b5394;padding:4pt 6pt;margin:3pt 0;
+    font:7.6pt/1.32 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.93em;background:#eef2f9;padding:0 2.5pt;border-radius:2pt}
+blockquote{border-left:3pt solid #b06a00;background:#fff8e8;padding:5pt 8pt;margin:5pt 0;font-size:8pt}
+table{width:100%;border-collapse:collapse;margin:4pt 0 6pt;font-size:7.9pt}
+th{background:#0b5394;color:#fff;padding:3pt 5pt;text-align:left;font-size:7.5pt}
+td{padding:3pt 5pt;border-bottom:.8pt solid #dfe5ef;vertical-align:top}
+hr{border:none;border-top:1pt solid #d8dee9;margin:9pt 0}
+.foot{margin-top:10pt;border-top:1.5pt solid #0b5394;padding-top:5pt;font-size:8pt;color:#44506a;text-align:center}
+</style><style>
+ul.task-list{list-style:none;margin-left:2pt}
+ul.task-list li label{display:inline}
+ul.task-list li{margin-bottom:3pt}
+.box{display:inline-block;width:7.5pt;height:7.5pt;border:1pt solid #0b5394;border-radius:1.5pt;margin-right:5pt;vertical-align:-0.5pt}
+.box.done{background:#0b5394}
+pre code{background:none;padding:0;border-radius:0;font-size:1em}
+pre{break-inside:avoid}
+</style></head><body>
+<h1 id="live-runbook--monday-november-16-2026">Live Runbook — Monday, November 16, 2026</h1>
+<p>Keep this open on the presenter laptop. The brief is <code>project-brief.pdf</code>; every step below answers one of its six questions.</p>
+<h2 id="timeline">Timeline</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6:30</td>
+<td>Arrive, projector, Wi-Fi, run the 15-minute check</td>
+</tr>
+<tr>
+<td>7:00</td>
+<td>Food and conversation; take show-and-tell names at the door</td>
+</tr>
+<tr>
+<td>7:20</td>
+<td>Short show &amp; tell (two or three people, 3 minutes each)</td>
+</tr>
+<tr>
+<td>7:30</td>
+<td><strong>The brief</strong> (5 min): "This is Yanibeth Puente's brief for <em>Pequeños Puentes Bilingües</em>." Walk through the PDF: who it's for, how it should work, the six questions</td>
+</tr>
+<tr>
+<td>7:35</td>
+<td><strong>Build</strong> (steps 1–6 below, ~65 min)</td>
+</tr>
+<tr>
+<td>8:40</td>
+<td>Recap: the pattern (AI drafts → human approves → system packages and delivers); Q&amp;A</td>
+</tr>
+<tr>
+<td>9:00</td>
+<td>Done; ask for December show-and-tell volunteers</td>
+</tr>
+</tbody>
+</table>
+<h2 id="before-the-night">Before the night</h2>
+<ul class="task-list">
+<li><label><span class="box done"></span>Yanibeth: permission to show the name and brand on screen (granted Nov 16). Attending (confirmed). Still to ask: availability to attend; 2–3 existing activities or plans to use as style examples</label></li>
+<li><label><span class="box done"></span>Full dry run done Nov 16: the <strong>fallback</strong> is <code>puentes-test/</code> (<em>Mi jardín / My Garden</em>, age 3) plus the two <code>FALLBACK-PACK-garden-*.pdf</code> files</label></li>
+<li><label><span class="box"></span>Check current Teachers Pay Teachers and Etsy rules on digital downloads and AI-assisted content (for step 6)</label></li>
+<li><label><span class="box"></span>Prepare a few images that are safe to sell (your own, licensed, or Adobe Firefly's own models)</label></li>
+<li><label><span class="box"></span>Empty <code>puentes/</code> folder ready; terminal font ~20pt; browser zoom ~150%</label></li>
+</ul>
+<h2 id="15-minute-check-on-site">15-minute check on site</h2>
+<ul class="task-list">
+<li><label><span class="box"></span>Claude Code signed in; <code>claude --model sonnet</code> starts in <code>puentes/</code></label></li>
+<li><label><span class="box"></span><code>project-brief.pdf</code> open in one window, the fallback pack in another</label></li>
+<li><label><span class="box"></span>Phone hotspot ready (Claude Code needs the network)</label></li>
+<li><label><span class="box"></span>Notifications off</label></li>
+</ul>
+<h2 id="the-build">The build</h2>
+<p><strong>Step 1 · The teacher's voice</strong> — <em>Question 1: "How do I keep my style?"</em> Create <code>CLAUDE.md</code> with the teacher's rules and examples: who the materials are for, tone, simple and inexpensive activities, clear instructions, clean layout, Spanish and English side by side. Paste in one real example activity. <em>Say:</em> "The memory file is how the AI learns the teacher's style instead of inventing one. Same trick as the September tips."</p>
+<p><strong>Step 2 · The generator</strong> — <em>Question 6: "Drafts by age, theme, skill and language?"</em> Define the inputs (age 1–5, theme, skills, language) and have Claude draft one week as structured data: objectives, five daily activities, materials, vocabulary list in both languages. <em>Ask the room for a theme.</em></p>
+<p><strong>Step 3 · The printable pack</strong> — <em>Brief: "ready to print, letter size"</em> Turn the plan into HTML pages: cover, instructions for the teacher or family, weekly plan, activity pages (counting, vocabulary, art, motor). Print to PDF and show it.</p>
+<p><strong>Step 4 · Quality checks</strong> — <em>Question 5: "Original, good quality, age-appropriate?"</em> Add a review checklist and have Claude check the draft against it: age-appropriate tasks and safety (no small parts under 3), correct Spanish and English, nothing copied, images safe to sell. <em>A person signs off on every page.</em> <em>Ask a Spanish speaker in the room to review the Spanish.</em></p>
+<p><strong>Step 5 · Making many</strong> — <em>Question 2: "Create, review and organize many printables efficiently?"</em> Generate a month of themes into an organized folder structure (theme/age/week), each with a review status, so the teacher reviews a batch instead of starting from blank pages.</p>
+<p><strong>Step 6 · Selling and promotion</strong> — <em>Questions 3 and 4: "Automate publishing and promotion?" and "Buy and download without me sending it?"</em> Draft the product title, description and preview images for the store; draft three Pinterest pin texts. Explain that Teachers Pay Teachers and Etsy deliver digital files automatically after purchase; the teacher uploads once. Mention the current marketplace rules you checked.</p>
+<h2 id="if-it-stalls">If it stalls</h2>
+<p>Narrate what Claude is doing; if a step fails, open the matching part of the fallback pack and keep going. Don't debug a single attendee's laptop from the front: "pair with your neighbor; I'll come by."</p>
+<h2 id="questions-you-may-get">Questions you may get</h2>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Short answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Is it allowed to sell AI-assisted content?"</td>
+<td>Depends on the marketplace and changes over time; read the current rules and disclose where required. The teacher's review and editing is what makes it the teacher's work.</td>
+</tr>
+<tr>
+<td>"Who owns the result?"</td>
+<td>Keep it original: the teacher's ideas, edited by the teacher, with images you have rights to.</td>
+</tr>
+<tr>
+<td>"Can this run without the cloud?"</td>
+<td>Drafting can use local models, but quality drops; the printing and packaging are all local.</td>
+</tr>
+<tr>
+<td>"Why not just use Canva?"</td>
+<td>Canva is great for one page. The value here is generating a consistent pack by age, theme and skill, many at a time, in two languages.</td>
+</tr>
+</tbody>
+</table>
+</body></html>

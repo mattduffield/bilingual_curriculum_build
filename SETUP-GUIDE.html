@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+@page{size:letter portrait;margin:.42in .48in}*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:8.3pt;line-height:1.34;color:#16202e}
+h1{font-size:15.5pt;color:#0b5394;margin-bottom:2pt}
+h2{font-size:10.5pt;color:#fff;background:#0b5394;padding:3pt 7pt;margin:11pt 0 5pt;border-radius:3pt}
+h3{font-size:9.4pt;color:#0b5394;margin:8pt 0 3pt;border-bottom:.8pt solid #d8dee9;padding-bottom:1.5pt}
+p{margin-bottom:4pt}ul,ol{margin:0 0 5pt 15pt}li{margin-bottom:2.4pt}
+pre{background:#f4f6fa;border-left:2.5pt solid #0b5394;padding:4pt 6pt;margin:3pt 0;
+    font:7.6pt/1.32 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.93em;background:#eef2f9;padding:0 2.5pt;border-radius:2pt}
+blockquote{border-left:3pt solid #b06a00;background:#fff8e8;padding:5pt 8pt;margin:5pt 0;font-size:8pt}
+table{width:100%;border-collapse:collapse;margin:4pt 0 6pt;font-size:7.9pt}
+th{background:#0b5394;color:#fff;padding:3pt 5pt;text-align:left;font-size:7.5pt}
+td{padding:3pt 5pt;border-bottom:.8pt solid #dfe5ef;vertical-align:top}
+hr{border:none;border-top:1pt solid #d8dee9;margin:9pt 0}
+.foot{margin-top:10pt;border-top:1.5pt solid #0b5394;padding-top:5pt;font-size:8pt;color:#44506a;text-align:center}
+</style><style>
+ul.task-list{list-style:none;margin-left:2pt}
+ul.task-list li label{display:inline}
+ul.task-list li{margin-bottom:3pt}
+.box{display:inline-block;width:7.5pt;height:7.5pt;border:1pt solid #0b5394;border-radius:1.5pt;margin-right:5pt;vertical-align:-0.5pt}
+.box.done{background:#0b5394}
+pre code{background:none;padding:0;border-radius:0;font-size:1em}
+pre{break-inside:avoid}
+</style></head><body>
+<h1 id="setup-guide--build-along">Setup Guide — Build Along</h1>
+<p><strong>Full Stack Devs PDX · Monday, November 16, 2026 · 7:00 PM</strong><br />
+<em>Build Night: From a Teacher's Idea to an AI-Powered Printable Business</em></p>
+<p>Nothing is required: you can come and watch. If you want to build along, pick <strong>one lane</strong> and set it up at home first. Venue Wi-Fi is not the place for a first install.</p>
+<hr />
+<h2 id="what-were-building">What we're building</h2>
+<p>A small system that drafts <strong>bilingual (Spanish/English) printable curricula for children ages 1–5</strong>, from a real teacher's brief:</p>
+<ol type="1">
+<li>You choose an <strong>age</strong>, a <strong>theme</strong> (e.g. <em>Las manzanas / Apples</em>), a <strong>skill</strong> (math, language, art, sensory, motor) and a <strong>language</strong>.</li>
+<li>AI drafts a <strong>weekly plan</strong> with learning objectives and matching <strong>activities</strong>, in the teacher's style.</li>
+<li>The system lays it out as a <strong>letter-size, print-ready PDF</strong>: cover, instructions, weekly plan and activity pages.</li>
+<li>A <strong>checklist</strong> catches problems: age-appropriateness, bilingual accuracy, originality, images that are safe to sell.</li>
+<li>We draft the <strong>store listing</strong> and <strong>Pinterest pins</strong>, and look at how marketplaces deliver downloads automatically.</li>
+</ol>
+<hr />
+<h2 id="lane-1--browser--nothing-to-install">Lane 1 · Browser — nothing to install</h2>
+<p>Open <strong>claude.ai</strong> (a free account works) and follow along by describing each step. You'll get the plan, activity text and listing copy; for the PDF, ask for a single HTML page, open it in your browser and use <strong>File → Print → Save as PDF</strong>.</p>
+<h2 id="lane-2--terminal--claude-code">Lane 2 · Terminal — Claude Code</h2>
+<ol type="1">
+<li>Install Node.js from <strong>nodejs.org</strong> (the LTS button).</li>
+<li>Install Claude Code once:
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> install <span class="at">-g</span> @anthropic-ai/claude-code</span></code></pre></div></li>
+<li>Make a folder and start it there:
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> puentes <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> puentes</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> <span class="at">--model</span> sonnet</span></code></pre></div></li>
+<li>Sign in when it asks. Claude Code needs a <strong>paid Claude plan</strong> (Pro or Max) or an Anthropic API account; on a free account, use Lane 1. We use <strong>Sonnet</strong> because it's fast; Opus is slower and spends minutes thinking. That's it; we'll create every file together during the build.</li>
+</ol>
+<p><strong>PDFs:</strong> we'll generate HTML pages and print them to PDF from the browser, so no extra tools are needed. (If you prefer a command-line route, <code>pip install weasyprint</code> works too.)</p>
+<hr />
+<h2 id="bring">Bring</h2>
+<ul class="task-list">
+<li><label><span class="box"></span>One setup above, tested at home</label></li>
+<li><label><span class="box"></span><strong>A theme idea</strong> for a preschool week (seasons, animals, colors, food, community helpers…)</label></li>
+<li><label><span class="box"></span>Optional: if you speak Spanish, you'll be our bilingual reviewer. <em>¡Hablantes de español bienvenidos!</em></label></li>
+</ul>
+<h2 id="good-to-know">Good to know</h2>
+<ul>
+<li>We'll keep the <strong>teacher in charge</strong>: AI drafts, a person approves every page.</li>
+<li>Images: only use pictures you made, licensed, or generated with a tool whose terms allow selling the result.</li>
+<li>Marketplaces such as Teachers Pay Teachers and Etsy have their own rules for digital downloads and AI-assisted content. We'll look at them together; check the current rules before you sell anything.</li>
+</ul>
+<div class="foot">Full Stack Devs PDX · Gladstone Park SDA Church, 8378 Cason Rd, Gladstone, OR 97027 · Free · meetup.com/full-stack-dev-pdx/events/317302767</div>
+</body></html>

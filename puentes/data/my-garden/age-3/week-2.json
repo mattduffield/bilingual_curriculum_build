@@ -1,0 +1,427 @@
+{
+  "status": "DRAFT",
+  "theme": {
+    "es": "Mi huerto",
+    "en": "My garden"
+  },
+  "age": 3,
+  "week": 2,
+  "title": {
+    "es": "Mi huerto: agua, sol y crecer",
+    "en": "My Garden: Water, Sun and Growing"
+  },
+  "objectives": [
+    {
+      "es": "Comparar tamaños: grande y pequeño.",
+      "en": "Compare sizes: big and small."
+    },
+    {
+      "es": "Aprender palabras de la lluvia, el sol y el crecimiento.",
+      "en": "Learn words about rain, sun and growing."
+    },
+    {
+      "es": "Moverse y explorar con agua, pintura y saltos.",
+      "en": "Move and explore with water, paint and hopping."
+    }
+  ],
+  "days": [
+    {
+      "day": {
+        "es": "lunes",
+        "en": "Monday"
+      },
+      "activity": {
+        "name": {
+          "es": "Flores grandes y pequeñas",
+          "en": "Big and small flowers"
+        },
+        "skill_area": {
+          "key": "math",
+          "es": "matemáticas",
+          "en": "math"
+        },
+        "safety_ok_under_3": false,
+        "materials": [
+          {
+            "es": "6 flores de papel: 3 grandes y 3 pequeñas",
+            "en": "6 paper flowers: 3 big and 3 small"
+          },
+          {
+            "es": "2 platos de papel",
+            "en": "2 paper plates"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Pon todas las flores en la mesa.",
+            "en": "Put all the flowers on the table."
+          },
+          {
+            "es": "Muestra una flor grande y una pequeña.",
+            "en": "Show one big flower and one small flower."
+          },
+          {
+            "es": "Pongan las grandes en un plato y las pequeñas en el otro.",
+            "en": "Put the big ones on one plate and the small ones on the other."
+          },
+          {
+            "es": "Cuenten cuántas hay en cada plato.",
+            "en": "Count how many are on each plate."
+          }
+        ],
+        "supervision": {
+          "es": "Un adulto cerca para guiar y hacer preguntas.",
+          "en": "An adult nearby to guide and ask questions."
+        },
+        "say_this": {
+          "es": "¡Esta flor es grande y esta es pequeña!",
+          "en": "This flower is big and this one is small!"
+        },
+        "age_range": {
+          "es": "3-4 años",
+          "en": "ages 3-4"
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "martes",
+        "en": "Tuesday"
+      },
+      "activity": {
+        "name": {
+          "es": "Canto de la lluvia",
+          "en": "Rain chant"
+        },
+        "skill_area": {
+          "key": "language",
+          "es": "lenguaje",
+          "en": "language"
+        },
+        "safety_ok_under_3": false,
+        "materials": [
+          {
+            "es": "una hoja grande de papel verde",
+            "en": "a big green paper leaf"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Muestra la hoja de papel y di: \"Hoy hablamos de la lluvia.\"",
+            "en": "Show the paper leaf and say: \"Today we talk about rain.\""
+          },
+          {
+            "es": "Di el canto despacio. Haz caer los dedos como gotas.",
+            "en": "Say the chant slowly. Let your fingers fall like drops."
+          },
+          {
+            "es": "Haz un círculo grande con los brazos para el sol.",
+            "en": "Make a big circle with your arms for the sun."
+          },
+          {
+            "es": "Repitan el canto juntos dos o tres veces.",
+            "en": "Say the chant together two or three times."
+          }
+        ],
+        "supervision": {
+          "es": "Un adulto con los niños todo el tiempo.",
+          "en": "An adult with the children the whole time."
+        },
+        "say_this": {
+          "es": "Gota, gota, cae la lluvia; sol, sol, crece mi plantita.",
+          "en": "Drop, drop, the rain falls; sun, sun, my little plant grows."
+        },
+        "age_range": {
+          "es": "3-5 años",
+          "en": "ages 3-5"
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "miércoles",
+        "en": "Wednesday"
+      },
+      "activity": {
+        "name": {
+          "es": "Gotas con esponja",
+          "en": "Sponge raindrops"
+        },
+        "skill_area": {
+          "key": "art",
+          "es": "arte",
+          "en": "art"
+        },
+        "safety_ok_under_3": false,
+        "materials": [
+          {
+            "es": "papel",
+            "en": "paper"
+          },
+          {
+            "es": "pintura azul lavable no tóxica",
+            "en": "washable non-toxic blue paint"
+          },
+          {
+            "es": "un plato de papel",
+            "en": "a paper plate"
+          },
+          {
+            "es": "trozos grandes de esponja de cocina (más grandes que un tubo de papel higiénico)",
+            "en": "big pieces of kitchen sponge (bigger than a toilet-paper tube)"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Pon un poco de pintura azul en el plato.",
+            "en": "Put a little blue paint on the plate."
+          },
+          {
+            "es": "Moja un trozo de esponja en la pintura.",
+            "en": "Dip a piece of sponge in the paint."
+          },
+          {
+            "es": "Presiona la esponja en el papel para hacer una gota.",
+            "en": "Press the sponge on the paper to make a drop."
+          },
+          {
+            "es": "Haz muchas gotas: ¡una lluvia!",
+            "en": "Make lots of drops: a rainstorm!"
+          }
+        ],
+        "supervision": {
+          "es": "Un adulto cerca; revisa que los trozos de esponja sean grandes y que nadie los muerda.",
+          "en": "An adult nearby; check that the sponge pieces are big and that no one chews them."
+        },
+        "say_this": {
+          "es": "¡Mira cuántas gotas de lluvia!",
+          "en": "Look how many raindrops!"
+        },
+        "age_range": {
+          "es": "3-5 años",
+          "en": "ages 3-5"
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "jueves",
+        "en": "Thursday"
+      },
+      "activity": {
+        "name": {
+          "es": "Lluvia en la bandeja",
+          "en": "Rain in the tray"
+        },
+        "skill_area": {
+          "key": "sensory",
+          "es": "sensorial",
+          "en": "sensory"
+        },
+        "safety_ok_under_3": false,
+        "materials": [
+          {
+            "es": "una bandeja o tina baja con borde",
+            "en": "a shallow tray or tub with a rim"
+          },
+          {
+            "es": "agua (dos dedos de profundidad)",
+            "en": "water (about two fingers deep)"
+          },
+          {
+            "es": "vasos de plástico con agujeros hechos por un adulto",
+            "en": "plastic cups with holes made by an adult"
+          },
+          {
+            "es": "una toalla",
+            "en": "a towel"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Pon la bandeja sobre la toalla.",
+            "en": "Put the tray on the towel."
+          },
+          {
+            "es": "El adulto echa un poco de agua en la bandeja.",
+            "en": "The adult pours a little water into the tray."
+          },
+          {
+            "es": "Llenen un vaso y dejen que el agua caiga por los agujeros, como lluvia.",
+            "en": "Fill a cup and let the water fall through the holes, like rain."
+          },
+          {
+            "es": "Hablen de lo que ven y sienten: fría, mojada, gotas.",
+            "en": "Talk about what you see and feel: cold, wet, drops."
+          }
+        ],
+        "supervision": {
+          "es": "Un adulto al alcance de la mano todo el tiempo. Agua muy poco profunda. Seca el piso al terminar.",
+          "en": "An adult within arm's reach the whole time. Very shallow water. Dry the floor when done."
+        },
+        "say_this": {
+          "es": "La lluvia cae, gota a gota.",
+          "en": "The rain falls, drop by drop."
+        },
+        "age_range": {
+          "es": "3-5 años",
+          "en": "ages 3-5"
+        }
+      }
+    },
+    {
+      "day": {
+        "es": "viernes",
+        "en": "Friday"
+      },
+      "activity": {
+        "name": {
+          "es": "Piedras del huerto",
+          "en": "Garden stones"
+        },
+        "skill_area": {
+          "key": "motor",
+          "es": "motricidad",
+          "en": "motor"
+        },
+        "safety_ok_under_3": false,
+        "materials": [
+          {
+            "es": "6 platos de papel",
+            "en": "6 paper plates"
+          },
+          {
+            "es": "cinta adhesiva",
+            "en": "tape"
+          }
+        ],
+        "steps": [
+          {
+            "es": "Pega los platos al piso con cinta, en fila, a un paso de distancia.",
+            "en": "Tape the plates to the floor in a row, one step apart."
+          },
+          {
+            "es": "Muestra cómo pisar de plato en plato.",
+            "en": "Show how to step from plate to plate."
+          },
+          {
+            "es": "Salten juntos de \"piedra\" en \"piedra\".",
+            "en": "Hop together from \"stone\" to \"stone\"."
+          },
+          {
+            "es": "Cuenten cada salto en voz alta.",
+            "en": "Count each hop out loud."
+          }
+        ],
+        "supervision": {
+          "es": "Un adulto al lado. Piso limpio y firme; con zapatos o descalzos, no solo con calcetines.",
+          "en": "An adult beside the child. Clean, firm floor; wear shoes or go barefoot, not just socks."
+        },
+        "say_this": {
+          "es": "¡Salto, salto, salto a la piedra!",
+          "en": "Hop, hop, hop to the stone!"
+        },
+        "age_range": {
+          "es": "3-5 años",
+          "en": "ages 3-5"
+        }
+      }
+    }
+  ],
+  "materials_week": [
+    {
+      "es": "6 flores de papel: 3 grandes y 3 pequeñas",
+      "en": "6 paper flowers: 3 big and 3 small"
+    },
+    {
+      "es": "2 platos de papel",
+      "en": "2 paper plates"
+    },
+    {
+      "es": "una hoja grande de papel verde",
+      "en": "a big green paper leaf"
+    },
+    {
+      "es": "papel",
+      "en": "paper"
+    },
+    {
+      "es": "pintura azul lavable no tóxica",
+      "en": "washable non-toxic blue paint"
+    },
+    {
+      "es": "un plato de papel",
+      "en": "a paper plate"
+    },
+    {
+      "es": "trozos grandes de esponja de cocina (más grandes que un tubo de papel higiénico)",
+      "en": "big pieces of kitchen sponge (bigger than a toilet-paper tube)"
+    },
+    {
+      "es": "una bandeja o tina baja con borde",
+      "en": "a shallow tray or tub with a rim"
+    },
+    {
+      "es": "agua (dos dedos de profundidad)",
+      "en": "water (about two fingers deep)"
+    },
+    {
+      "es": "vasos de plástico con agujeros hechos por un adulto",
+      "en": "plastic cups with holes made by an adult"
+    },
+    {
+      "es": "una toalla",
+      "en": "a towel"
+    },
+    {
+      "es": "6 platos de papel",
+      "en": "6 paper plates"
+    },
+    {
+      "es": "cinta adhesiva",
+      "en": "tape"
+    }
+  ],
+  "vocabulary": [
+    {
+      "es": "lluvia",
+      "en": "rain"
+    },
+    {
+      "es": "gota",
+      "en": "drop"
+    },
+    {
+      "es": "sol",
+      "en": "sun"
+    },
+    {
+      "es": "nube",
+      "en": "cloud"
+    },
+    {
+      "es": "agua",
+      "en": "water"
+    },
+    {
+      "es": "grande",
+      "en": "big"
+    },
+    {
+      "es": "pequeño",
+      "en": "small"
+    },
+    {
+      "es": "brote",
+      "en": "sprout"
+    },
+    {
+      "es": "crecer",
+      "en": "to grow"
+    },
+    {
+      "es": "regadera",
+      "en": "watering can"
+    }
+  ]
+}

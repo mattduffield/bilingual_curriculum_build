@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+@page{size:letter portrait;margin:.42in .48in}*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:8.3pt;line-height:1.34;color:#16202e}
+h1{font-size:15.5pt;color:#0b5394;margin-bottom:2pt}
+h2{font-size:10.5pt;color:#fff;background:#0b5394;padding:3pt 7pt;margin:11pt 0 5pt;border-radius:3pt}
+h3{font-size:9.4pt;color:#0b5394;margin:8pt 0 3pt;border-bottom:.8pt solid #d8dee9;padding-bottom:1.5pt}
+p{margin-bottom:4pt}ul,ol{margin:0 0 5pt 15pt}li{margin-bottom:2.4pt}
+pre{background:#f4f6fa;border-left:2.5pt solid #0b5394;padding:4pt 6pt;margin:3pt 0;
+    font:7.6pt/1.32 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.93em;background:#eef2f9;padding:0 2.5pt;border-radius:2pt}
+blockquote{border-left:3pt solid #b06a00;background:#fff8e8;padding:5pt 8pt;margin:5pt 0;font-size:8pt}
+table{width:100%;border-collapse:collapse;margin:4pt 0 6pt;font-size:7.9pt}
+th{background:#0b5394;color:#fff;padding:3pt 5pt;text-align:left;font-size:7.5pt}
+td{padding:3pt 5pt;border-bottom:.8pt solid #dfe5ef;vertical-align:top}
+hr{border:none;border-top:1pt solid #d8dee9;margin:9pt 0}
+.foot{margin-top:10pt;border-top:1.5pt solid #0b5394;padding-top:5pt;font-size:8pt;color:#44506a;text-align:center}
+</style><style>
+ul.task-list{list-style:none;margin-left:2pt}
+ul.task-list li label{display:inline}
+ul.task-list li{margin-bottom:3pt}
+.box{display:inline-block;width:7.5pt;height:7.5pt;border:1pt solid #0b5394;border-radius:1.5pt;margin-right:5pt;vertical-align:-0.5pt}
+.box.done{background:#0b5394}
+pre code{background:none;padding:0;border-radius:0;font-size:1em}
+pre{break-inside:avoid}
+</style></head><body>
+<h1 id="show-guide-what-to-open-after-each-step">Show guide: what to open after each step</h1>
+<p>Run these in a <strong>second terminal tab</strong> in the same <code>puentes/</code> folder (⌘T, then <code>cd</code> to the folder), so Claude's tab stays clean. <strong>Web pages</strong> (<code>.html</code>) open in your browser with <code>open</code>. <strong>Text files</strong> (<code>.md</code>) open in Zed with <code>zed</code>; press <strong>⌘⇧V</strong> for a formatted preview, or just read the plain text. Before you start, zoom the browser to <strong>125–150%</strong> (⌘+) so the back row can read it.</p>
+<hr />
+<h2 id="after-step-1--the-rules-file">After step 1 · The rules file</h2>
+<p><code>zed CLAUDE.md</code></p>
+<ul>
+<li><strong>Point at:</strong> the Voice section, the age 1–2 safety rule (nothing smaller than a toilet-paper tube), and her activity as the model to copy.</li>
+<li><strong>Say:</strong> "Claude rereads this before everything it writes. If she changes a rule here, every future page changes."</li>
+</ul>
+<h2 id="after-step-2--the-week-as-data">After step 2 · The week as data</h2>
+<p><code>zed data/*/age-3/week-1.json</code></p>
+<ul>
+<li><strong>Point at:</strong> <code>"es"</code> and <code>"en"</code> side by side on every line, the five days, and the vocabulary list. Claude's chat summary table works too.</li>
+<li><strong>Say:</strong> "This isn't a document yet. It's data, so the same week can become a PDF, a listing, or a Spanish-only version."</li>
+<li><strong>Ask Yanibeth:</strong> "Does this sound like you?"</li>
+</ul>
+<h2 id="after-step-3--the-printable-pack-web-page">After step 3 · The printable pack (web page)</h2>
+<p><code>open out/*/age-3/week-1/index.html</code></p>
+<p>Scroll slowly from top to bottom. Each white sheet is one printed page:</p>
+<ol type="1">
+<li><strong>Cover:</strong> title in Spanish and English, a line drawing, the age, and the <strong>BORRADOR / DRAFT</strong> stamp in the corner.</li>
+<li><strong>Adult guide:</strong> how to use the week, in two columns, ES | EN.</li>
+<li><strong>Weekly plan:</strong> objectives, a day-by-day table, and the week's materials ("one shopping list").</li>
+<li><strong>Activity pages (×5):</strong> Spanish left, English right; the <strong>Say this</strong> box; the <strong>Supervision</strong> box; the empty <strong>Draw here</strong> box for the child.</li>
+<li><strong>Vocabulary cards:</strong> cut out, fold on the line, Spanish on one side and English on the other.</li>
+</ol>
+<p>Then press <strong>⌘P</strong> and point at the preview: <strong>9 pages, letter size</strong>. "That's the file she sells." Cancel; no need to print.</p>
+<h2 id="after-step-4--the-review">After step 4 · The review</h2>
+<p><code>zed review/week-1.md</code>, then <code>zed REVIEW-CHECKLIST.md</code></p>
+<ul>
+<li><strong>Point at:</strong> the three groups (<strong>Must fix · Should fix · Teacher's call</strong>), each with a page number and a suggested fix.</li>
+<li><strong>Read one Must fix aloud.</strong> Yanibeth reads a Spanish line and decides one Teacher's call.</li>
+<li><strong>Say:</strong> "Claude checked its own work against her standards and changed nothing. She decides."</li>
+</ul>
+<h2 id="after-step-5--the-dashboard-web-page">After step 5 · The dashboard (web page)</h2>
+<p><code>open out/dashboard.html</code></p>
+<ul>
+<li><strong>Point at:</strong> the count tiles (All · Draft · Needs review · Approved). Click a tile to filter the list.</li>
+<li><strong>The table:</strong> one row per week, with its status, its date, <strong>Abrir / Open</strong> (opens that week's pages) and <strong>Notas / Notes</strong> (opens the review).</li>
+<li><strong>Click "Abrir / Open" on week 2:</strong> a whole new week in the same design, built by the same script.</li>
+<li><strong>Say:</strong> "This is how she manages 50 printables: one page shows what's waiting for her."</li>
+</ul>
+<h2 id="after-step-6--the-store-web-page--text">After step 6 · The store (web page + text)</h2>
+<p><code>open $(find store -name preview.html)</code></p>
+<ul>
+<li><strong>The preview collage:</strong> the product title, what's included (weeks, activities, cards, age) and sample pages on the right. Zoom out (⌘−) until the whole frame fits; <strong>that screenshot is the product image</strong> for Teachers Pay Teachers and Etsy.</li>
+</ul>
+<p><code>zed $(find store -name listing.md)</code></p>
+<ul>
+<li><strong>Point at:</strong> the two titles, the description, the 10 tags, and the <strong>"Not claimed"</strong> and <strong>"Before you publish"</strong> lists. In the test run it wrote "2-week pack, not a month pack".</li>
+<li><code>zed $(find store -name pinterest.md)</code> shows the 3 pins. Each has <code>[STORE LINK]</code> until she publishes.</li>
+<li><strong>Say:</strong> "She uploads the PDF once, and the marketplace delivers it to every buyer."</li>
+</ul>
+<h2 id="after-step-7--approval-web-page">After step 7 · Approval (web page)</h2>
+<p><code>open out/dashboard.html</code> (reload it if it's already open: ⌘R)</p>
+<ul>
+<li><strong>Point at:</strong> week 1 is now <strong>Aprobado / Approved</strong> (green), and week 2 is still <strong>Borrador / Draft</strong>.</li>
+<li><strong>Click "Abrir / Open" on week 1:</strong> the DRAFT stamp is gone. Open week 2: it's still there.</li>
+<li><strong>Say:</strong> "AI drafts, a human approves, and the system packages and delivers."</li>
+</ul>
+<hr />
+<p><strong>If a command says "no matches found":</strong> the folder has a different name. Run <code>ls out store</code> to see what Claude made, or ask Claude: <em>"Open the dashboard for me."</em> <strong>Fallback:</strong> the same pages already exist in <code>puentes-test/</code>. <code>cd</code> there and run the same commands.</p>
+</body></html>
