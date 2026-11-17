@@ -1,0 +1,28 @@
+# Build artifacts — regenerate with:
+#   npx @marp-team/marp-cli gemini-nano-talk.md -o talk.html
+#
+# talk.html IS committed on purpose, so anyone can open the deck without
+# installing Marp. This is the duplicate produced by running marp-cli with no
+# -o flag (it defaults to <input>.html); keep one, not both.
+gemini-nano-talk.html
+talk.pdf
+talk.pptx
+
+# Event ephemera — flyers carry a venue address and Wi-Fi credentials.
+# Keep them out of this repo entirely. They live in ../flyers/.
+flyer*.html
+flyer*.pdf
+*wifi*
+*-internal.*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Node — this project has zero dependencies, but npx leaves these behind
+node_modules/
+package-lock.json
+.npm/
